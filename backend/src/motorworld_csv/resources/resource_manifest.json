@@ -4,5 +4,9 @@
   "source": "Builder.rar / BUILDER.html; category_2026-10-09_120457.csv",
   "taxonomy_status": "User-supplied dataset; live eBay taxonomy not verified",
   "ebay_count": 714,
-  "prestashop_count": 21
+  "prestashop_count": 21,
+  "ebay_header_count": 55,
+  "ebay_store_category_count": 50,
+  "logo_sha256": "2dbe320f26032ad2e58f7231a15fe26cc90e6316bac53981f75d006d2040fe67",
+  "template_style_sha256": "2967d8094a1d9ec72674fce5efbf2832185ab32ae6bd56e91ba9892ddc775a46"
 }

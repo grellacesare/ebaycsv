@@ -1,0 +1,89 @@
+<style>{{ css | safe }}</style>
+<div class="mw-wrap" id="preview-root">
+<div class="mw-header">
+<div class="mw-brand">{% if profile.logo_url %}<img alt="Motor World logo" class="mw-brand-logo" src="{{ profile.logo_url }}"/>{% endif %}<span class="mw-brand-text">Motor World Sciacca</span></div>
+<div class="mw-badge">Ricambi &amp; Accessori Moto</div>
+</div>
+<div class="mw-title">
+<div class="mw-title-row">
+
+<h1 id="pv-title">{{ title }}</h1>
+</div>
+<div class="sku">
+              CODICE: <span id="pv-sku">{{ reference }}</span>
+{% if product.ean %}<span id="pv-ean-wrap"> •  EAN: <span id="pv-ean-inline">{{ product.ean }}</span></span>{% endif %}
+</div>
+</div>
+{% if image_urls %}<div class="mw-block" id="pv-images-wrapper"><h2>Immagini prodotto</h2><div class="mw-images">{% for url in image_urls %}<div class="mw-imgbox"><img src="{{ url }}" alt="{{ product.name }}" /></div>{% endfor %}</div></div>{% endif %}
+<div class="mw-block">
+<h2>Dettagli Prodotto</h2>
+<table class="mw-specs">
+{% if details['marca'] %}<tr><th>Marca</th><td id="pv-marca">{{ details['marca'] }}</td></tr>{% endif %}
+{% if details['modello'] %}<tr><th>Modello / Linea</th><td id="pv-modello">{{ details['modello'] }}</td></tr>{% endif %}
+{% if details['ean'] %}<tr><th>Codice EAN</th><td id="pv-ean">{{ details['ean'] }}</td></tr>{% endif %}
+{% if details['qty'] %}<tr><th>Pezzi in inserzione</th><td id="pv-qty">{{ details['qty'] }}</td></tr>{% endif %}
+{% if details['materiale'] %}<tr><th>Materiale</th><td id="pv-materiale">{{ details['materiale'] }}</td></tr>{% endif %}
+{% if details['specifica'] %}<tr><th>Specifiche / Standard</th><td id="pv-specifica">{{ details['specifica'] }}</td></tr>{% endif %}
+{% if details['oem'] %}<tr><th>Codice OEM / Ref</th><td id="pv-oem">{{ details['oem'] }}</td></tr>{% endif %}
+{% if details['mpn'] %}<tr><th>MPN / Codice produttore</th><td id="pv-mpn">{{ details['mpn'] }}</td></tr>{% endif %}
+{% if details['posizione'] %}<tr><th>Posizione / Lato</th><td id="pv-posizione">{{ details['posizione'] }}</td></tr>{% endif %}
+{% if details['colore'] %}<tr><th>Colore / Finitura</th><td id="pv-colore">{{ details['colore'] }}</td></tr>{% endif %}
+{% if details['misure'] %}<tr><th>Misure / Dimensioni</th><td id="pv-misure">{{ details['misure'] }}</td></tr>{% endif %}
+{% if details['condizione'] %}<tr><th>Condizione</th><td id="pv-condizione">{{ details['condizione'] }}</td></tr>{% endif %}
+{% if details['tipo-veicolo'] %}<tr><th>Tipo veicolo</th><td id="pv-tipo-veicolo">{{ details['tipo-veicolo'] }}</td></tr>{% endif %}
+{% if details['marca-veicolo'] %}<tr><th>Marca veicolo</th><td id="pv-marca-veicolo">{{ details['marca-veicolo'] }}</td></tr>{% endif %}
+{% if details['modello-veicolo'] %}<tr><th>Modello veicolo</th><td id="pv-modello-veicolo">{{ details['modello-veicolo'] }}</td></tr>{% endif %}
+{% if details['anno-compat'] %}<tr><th>Anno compatibilità</th><td id="pv-anno-compat">{{ details['anno-compat'] }}</td></tr>{% endif %}
+{% if details['cilindrata'] %}<tr><th>Cilindrata</th><td id="pv-cilindrata">{{ details['cilindrata'] }}</td></tr>{% endif %}
+{% if details['motore-norm'] %}<tr><th>Motore / Normativa</th><td id="pv-motore-norm">{{ details['motore-norm'] }}</td></tr>{% endif %}
+{% if details['omologazione'] %}<tr><th>Omologazione / Certificazioni</th><td id="pv-omologazione">{{ details['omologazione'] }}</td></tr>{% endif %}
+{% if details['voltaggio'] %}<tr><th>Voltaggio</th><td id="pv-voltaggio">{{ details['voltaggio'] }}</td></tr>{% endif %}
+{% if details['peso'] %}<tr><th>Peso</th><td id="pv-peso">{{ details['peso'] }}</td></tr>{% endif %}
+{% if details['finitura-extra'] %}<tr><th>Finitura (extra)</th><td id="pv-finitura-extra">{{ details['finitura-extra'] }}</td></tr>{% endif %}
+{% if details['ricambio-classica'] %}<tr><th>Ricambio moto classica</th><td id="pv-ricambio-classica">{{ details['ricambio-classica'] }}</td></tr>{% endif %}
+{% if details['bundle'] %}<tr><th>Inserzione bundle</th><td id="pv-bundle">{{ details['bundle'] }}</td></tr>{% endif %}
+{% if details['destinazione-uso'] %}<tr><th>Destinazione d'uso</th><td id="pv-destinazione-uso">{{ details['destinazione-uso'] }}</td></tr>{% endif %}
+{% if details['altro-codice'] %}<tr><th>Altro codice identificativo</th><td id="pv-altro-codice">{{ details['altro-codice'] }}</td></tr>{% endif %}
+{% if details['info-agg'] %}<tr><th>Informazioni Aggiuntive</th><td id="pv-info-agg">{{ details['info-agg'] }}</td></tr>{% endif %}
+</table>
+</div>
+<div class="mw-block" id="pv-desc-block"><h2>Descrizione</h2><p>{{ description | nl2br }}</p>{% if features %}<ul class="mw-list">{% for item in features %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}</div>
+{% if box %}<div class="mw-block"><h2>Contenuto Confezione</h2><ul class="mw-list">{% for item in box %}<li>{{ item }}</li>{% endfor %}</ul></div>{% endif %}
+{% if fitment_labels %}<div class="mw-block" id="pv-compat-block"><h2>Compatibilita / Fitment</h2><p>Verifica la compatibilità con il tuo veicolo prima dell’acquisto.</p><ul class="mw-list">{% for item in fitment_labels %}<li>{{ item }}</li>{% endfor %}</ul></div>{% endif %}
+{% if notes %}<div class="mw-block"><h2>Note tecniche</h2><p>{{ notes | nl2br }}</p></div>{% endif %}
+<div class="mw-block">
+<h2>Spedizione, Resi e Pagamenti</h2>
+<div class="mw-infobars">
+<div class="mw-infobar"><b>Spedizione</b><br/>{{ profile.shipping_text }}</div>
+<div class="mw-infobar">
+<b>Resi</b><br/>
+                Reso entro {{ profile.return_days }} giorni. L'articolo deve essere integro e completo
+                di confezione originale.
+              </div>
+<div class="mw-infobar">
+<b>Pagamenti</b><br/>
+                eBay gestisce pagamenti con Carte, PayPal e altri metodi
+                abilitati.
+              </div>
+</div>
+</div>
+<div class="mw-block">
+<h2>Motivi per scegliere Motor World</h2>
+<ul class="mw-list">
+<li>
+                Negozio specializzato moto: ricambi e accessori
+                <span class="mw-accent">Kawasaki, QJMotor, Polini</span>
+                e altri brand.
+              </li>
+<li>Supporto tecnico reale: consigli su montaggio e compatibilita.</li>
+<li>Magazzino in Italia, spedizioni rapide e tracciate.</li>
+</ul>
+</div>
+<div class="mw-footer">
+<b>Motor World Sciacca</b> • Professionalita, competenza e rapidita.
+            Le immagini sono indicative se non diversamente specificato.
+            I marchi citati appartengono ai rispettivi proprietari e sono usati
+            solo a scopo descrittivo.
+          </div>
+
+</div>

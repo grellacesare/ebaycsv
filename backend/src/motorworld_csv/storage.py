@@ -166,3 +166,12 @@ class Repository:
     def list_category_rules(self,supplier_id: str):
         from .categories.models import CategoryRule
         return [CategoryRule.model_validate(r) for r in self.list_records('category_rule') if r['supplier_id']==supplier_id]
+
+    def save_platform_profile(self,profile):
+        self.put_record('platform_profile',profile.destination,profile.model_dump(mode='json'))
+
+    def get_platform_profile(self,destination: str):
+        from .platforms.profiles import EbayProfile, PrestashopProfile
+        cls=EbayProfile if destination=='ebay' else PrestashopProfile
+        try:return cls.model_validate(self.get_record('platform_profile',destination))
+        except KeyError:return cls()

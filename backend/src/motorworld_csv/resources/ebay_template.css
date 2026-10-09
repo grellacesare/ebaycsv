@@ -1,0 +1,419 @@
+:root {
+      --mw-green: #66cc00; /* Kawasaki green */
+      --mw-green-2: #2fb300;
+      --mw-black: #0a0a0a;
+      --mw-dark: #111;
+      --mw-gray: #f5f5f5;
+      --mw-text: #111;
+    }
+
+    .mw-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      border: 1px solid #e6e6e6;
+      border-top: 6px solid var(--mw-green);
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--mw-text);
+      line-height: 1.45;
+    }
+
+    .mw-header {
+      background: linear-gradient(90deg, var(--mw-black) 0%, #1a1a1a 100%);
+      color: #fff;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .mw-brand {
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .mw-brand-logo{
+      height: 1.9em;
+      max-height: 40px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+    .mw-badge {
+      margin-left: auto;
+      font-size: 12px;
+      background: var(--mw-green);
+      color: #0b2100;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      box-shadow: 0 0 0 3px rgba(102,204,0,.15) inset;
+    }
+
+    .mw-title {
+      padding: 18px;
+      background: #fafafa;
+      border-bottom: 1px solid #eee;
+    }
+    .mw-title h1 {
+      margin: 0;
+      font-size: 22px;
+      color: var(--mw-black);
+    }
+
+    .mw-title-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    /* Logo produttore (opzionale) affiancato al titolo */
+    #pv-manuf-logo-wrap {
+      margin: 0;
+      text-align: left;
+    }
+
+    .mw-title .sku {
+      margin-top: 6px;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .mw-block {
+      padding: 16px 18px;
+      border-bottom: 1px solid #eee;
+    }
+    .mw-block h2 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      color: var(--mw-black);
+      border-left: 6px solid var(--mw-green);
+      padding-left: 10px;
+    }
+
+    .mw-specs {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+    .mw-specs th,
+    .mw-specs td {
+      border: 1px solid #e6e6e6;
+      padding: 8px 10px;
+      font-size: 13px;
+      text-align: left;
+    }
+    .mw-specs th {
+      width: 34%;
+      background: #f8fff2;
+      color: #1d3b10;
+    }
+
+    .mw-list {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .mw-list li {
+      margin: 6px 0;
+      font-size: 13px;
+    }
+
+    .mw-infobars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .mw-infobar {
+      border: 1px solid #e6e6e6;
+      border-left: 6px solid var(--mw-green);
+      padding: 12px;
+      background: #fcfffa;
+      font-size: 13px;
+    }
+    @media (max-width: 700px) {
+      .mw-infobars {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .mw-footer {
+      background: #0f0f0f;
+      color: #bdbdbd;
+      padding: 16px 18px;
+      font-size: 12px;
+    }
+    .mw-footer b {
+      color: #fff;
+    }
+
+    /* Carousel loghi produttori (sotto al footer) */
+    .mw-logos-strip{
+      background: #ffffff;
+      border-top: 1px solid #eee;
+      padding: 12px 18px 14px;
+    }
+    .mw-logos-label{
+      font-size: 11px;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin: 0 0 8px 0;
+    }
+    .mw-logos-viewport{
+      width: 100%;
+      overflow: hidden;
+    }
+    .mw-logos-track{
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      width: max-content;
+      animation: mw_logo_scroll 26s linear infinite;
+    }
+    .mw-logos-strip:hover .mw-logos-track{
+      animation-play-state: paused;
+    }
+    .mw-logos-track img{
+      height: 34px;
+      width: auto;
+      max-width: 140px;
+      object-fit: contain;
+      display: block;
+      opacity: .95;
+    }
+    @keyframes mw_logo_scroll{
+      0%{ transform: translateX(0); }
+      100%{ transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .mw-logos-track{ animation: none; }
+    }
+    .mw-accent {
+      color: var(--mw-green-2);
+      font-weight: 700;
+    }
+
+    .mw-images{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:6px;
+      justify-content:center;
+      width:100%;
+    }
+
+    /* Riquadro responsivo: l'immagine si adatta senza crop/zoom iniziale */
+    .mw-imgbox{
+      --mw-img-size: clamp(220px, 70vw, 360px);
+      width: var(--mw-img-size);
+      height: var(--mw-img-size);
+
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,.15);
+
+      position: relative;
+      z-index: 1;
+      overflow: visible; /* lo zoom deve poter "uscire" dal riquadro */
+    }
+
+    /* L'immagine NON è "zoomata" di default: si adatta al box */
+    .mw-imgbox img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* fondamentale: niente crop/zoom iniziale */
+      display: block;
+
+      transition: transform .18s ease, box-shadow .18s ease;
+      transform-origin: center;
+      cursor: zoom-in;
+      background: #fff;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 700px){
+      .mw-imgbox{ --mw-img-size: 92vw; }
+    }
+
+    /* Zoom SOLO su desktop con hover */
+    @media (hover:hover) and (pointer:fine){
+      .mw-imgbox:hover{ z-index: 10; }
+      .mw-imgbox:hover img{
+        transform: scale(1.6);
+        box-shadow: 0 12px 28px rgba(0,0,0,.35);
+      }
+    }
+
+    /* ====== eBay Profit Calculator Modal ====== */
+    .preview-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;align-items:center;}
+    .mw-modal{position:fixed;inset:0;display:none;z-index:9999;}
+    .mw-modal.open{display:block;}
+    .mw-modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.65);}
+    .mw-modal-panel{
+      position:relative;
+      width:min(860px, calc(100vw - 32px));
+      max-height:calc(100vh - 32px);
+      margin:16px auto;
+      background: #0f0f0f;
+      border:1px solid #333;
+      border-radius:16px;
+      box-shadow:0 12px 40px rgba(0,0,0,.6);
+      overflow:hidden;
+      color: #f5f5f5;
+    }
+    .mw-modal-header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      padding:14px 16px;
+      border-bottom:1px solid #222;
+      background: linear-gradient(180deg, rgba(149,255,67,0.12), rgba(0,0,0,0));
+    }
+    .mw-modal-header h3{margin:0;font-size:16px;}
+    .mw-iconbtn{
+      border:1px solid #333;
+      background:#111;
+      color:#eee;
+      padding:8px 10px;
+      border-radius:10px;
+      cursor:pointer;
+    }
+    .mw-iconbtn:hover{filter:brightness(1.08);}
+    .mw-modal-body{padding:16px;overflow:auto;max-height:calc(100vh - 120px);}
+    .mw-grid2{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+    }
+    .mw-grid2 label{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      font-size:12px;
+      color:#cfcfcf;
+    }
+    .mw-grid2 input{
+      width:100%;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid #333;
+      background:#0c0c0c;
+      color:#fff;
+      outline:none;
+    }
+    .mw-grid2 input:focus{border-color:#95ff43; box-shadow:0 0 0 3px rgba(149,255,67,0.12);}
+    .mw-comm{
+      grid-column:1 / -1;
+      border:1px solid #222;
+      border-radius:14px;
+      padding:12px;
+      background:rgba(255,255,255,0.02);
+    }
+    .mw-comm-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;}
+    .mw-comm-title{font-weight:700;color:#eaeaea;}
+    .mw-comm-buttons{display:flex;gap:8px;flex-wrap:wrap;}
+    .mw-comm-buttons button{
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid #333;
+      background:#111;
+      color:#eee;
+      cursor:pointer;
+      font-weight:700;
+    }
+    .mw-comm-buttons button.active{
+      border-color:#95ff43;
+      box-shadow:0 0 0 2px rgba(149,255,67,0.12);
+      color:#95ff43;
+    }
+    .mw-results{
+      margin-top:14px;
+      border:1px solid #222;
+      border-radius:16px;
+      padding:14px 14px;
+      background:rgba(255,255,255,0.02);
+      display:grid;
+      gap:8px;
+      font-size:13px;
+    }
+    .mw-results .row{display:flex;justify-content:space-between;gap:10px;}
+    .mw-results .row strong{font-size:14px;color:#fff;}
+    .mw-results .row span{color:#cfcfcf;}
+
+    .mw-profit-value{font-size:18px;font-weight:800;}
+    .mw-profit-negative{color:#ff6b6b;}
+    .mw-profit-positive{color:#95ff43;}
+    .mw-note{margin-top:10px;color:#aaa;font-size:12px;line-height:1.35;}
+    @media (max-width: 740px){
+      .mw-grid2{grid-template-columns:1fr;}
+    }
+
+
+    /* Forza titolo sezioni in nero (richiesta) */
+    #preview-root .mw-block h2,
+    #preview-root .mw-block h2#pv-desc-title {
+      color: #000 !important;
+    }
+
+    /* Tema interfaccia: il toggle agisce solo sull'ambiente di lavoro (UI), non sulla descrizione esportata */
+
+
+    /* GPSR / Rubrica: font bianco (UI) */
+    #gpsr-details,
+    #gpsr-details summary,
+    #gpsr-details label,
+    #gpsr-details small,
+    #gpsr-details span,
+    #gpsr-details p,
+    #gpsr-details h3,
+    #gpsr-details h4{
+      color:#fff !important;
+    }
+    #gpsr-details small{ opacity:0.9; }
+    #gpsr-details input,
+    #gpsr-details select,
+    #gpsr-details textarea{
+      color:#fff !important;
+      background:#111 !important;
+      border:1px solid #333 !important;
+    }
+    #gpsr-details input::placeholder,
+    #gpsr-details textarea::placeholder{
+      color:rgba(255,255,255,0.6) !important;
+    }
+    #gpsr-details option{
+      background:#111;
+      color:#fff;
+    }
+
+
+
+    /* Mini-rubrica: Link logo produttore (URL) */
+    .mw-logo-book { margin-top: 8px; }
+    .mw-logo-book-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .mw-logo-book-row select {
+      flex: 1 1 260px;
+      min-width: 220px;
+    }
+    .mw-logo-book .btn.secondary {
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 999px;
+    }
+    .mw-logo-book-hint {
+      margin-top: 6px;
+      font-size: 12px;
+      opacity: .85;
+    }
