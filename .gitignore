@@ -9,4 +9,5 @@ playwright-report/
 test-results/
 .superpowers/
 .env
+frontend/openapi.json
 *.sqlite*

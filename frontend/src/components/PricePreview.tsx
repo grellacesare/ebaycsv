@@ -1,0 +1,6 @@
+import type {PriceResult} from '../models';
+import {money,percent} from '../models';
+import {TrendingUp,TriangleAlert} from 'lucide-react';
+export function PricePreview({result,onUseMinimum}:{result:PriceResult,onUseMinimum?:(value:string)=>void}){
+  return <section className="price-preview"><div className="eyebrow">PREZZO FINALE IVA INCLUSA</div><div className="price-main">{money(result.final_gross)}</div><span className={'badge '+(result.below_minimum?'warning':'success')}>{result.below_minimum?<TriangleAlert size={14}/>:<TrendingUp size={14}/>} {result.below_minimum?'Margine sotto 20%':'Margine almeno 20%'}</span><div className="price-breakdown"><div><span>Ricavo IVA esclusa</span><b>{money(result.net_revenue)}</b></div><div><span>Commissioni</span><b>{money(result.commission)}</b></div><div><span>Guadagno</span><b>{money(result.profit)}</b></div><div><span>Margine sul ricavo netto</span><b>{percent(result.margin)}</b></div></div><div className="minimum"><span>Minimo per lasciare almeno il 20%</span><b>{result.minimum_gross?money(result.minimum_gross):'Irraggiungibile con questi parametri'}</b>{result.minimum_gross&&onUseMinimum&&<button className="button secondary" onClick={()=>onUseMinimum(result.minimum_gross!)}>Usa prezzo minimo</button>}</div></section>;
+}

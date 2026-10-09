@@ -30,7 +30,12 @@ def compile_drafts(product: Product,fitments: list[Compatibility],price_settings
                 diagnostics.append(Diagnostic(level='error',code='invalid_product_name',message='Nome PrestaShop: massimo 128 caratteri, senza < > ; = # { }.',hint='Modifica il nome della bozza.',field='title'))
             if product.ean and (not product.ean.isdigit() or len(product.ean) not in (8,13)):
                 diagnostics.append(Diagnostic(level='error',code='invalid_ean',message='EAN PrestaShop non valido: 8 o 13 cifre.',hint='Correggi o rimuovi il codice non confermato.',field='ean',value=product.ean))
-        decision=resolve_category(product,compatibility,destination,catalog,rules,override.category_id or product.extra.get(destination+'_category_id'))
+        common_category=product.extra.get(destination+'_category_id')
+        if destination=='ebay' and common_category and compatibility:
+            category=next((r for r in catalog.ebay if r.id==common_category),None)
+            if category and category.context in ('moto','scooter') and compatibility.vehicle_type in ('moto','scooter') and category.context!=compatibility.vehicle_type:
+                common_category=None
+        decision=resolve_category(product,compatibility,destination,catalog,rules,override.category_id or common_category)
         diagnostics.extend(decision.diagnostics)
         price=None
         try:

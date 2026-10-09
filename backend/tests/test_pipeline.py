@@ -48,3 +48,9 @@ def test_base_listing_has_no_invented_compatibility():
     row=compile_drafts(p,[],price_settings(),EbayProfile(free_shipping_confirmed=True),catalog(),[],{id:ListingOverrides(listing_id=id,category_id='177925')})[0]
     assert row.valid and row.compatibility_id is None
     assert 'Compatibilita / Fitment' not in row.description_html
+
+def test_common_moto_category_only_applies_to_compatible_variants():
+    p=product(family='Carburatori',extra={'ebay_category_id':'177773'})
+    rows=compile_drafts(p,[vehicle(),vehicle(id='scooter',model='TMAX',vehicle_type='scooter')],price_settings(),EbayProfile(free_shipping_confirmed=True),catalog(),[],{})
+    assert rows[0].category_ids==['177773'] and rows[1].category_ids==['82205']
+    assert all(r.valid for r in rows)
