@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+var/
+node_modules/
+dist/
+playwright-report/
+test-results/
+.superpowers/
+.env
+*.sqlite*
