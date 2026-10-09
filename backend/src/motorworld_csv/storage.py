@@ -91,7 +91,21 @@ class Repository:
             summary={k:v for k,v in payload.items() if k!='original_products'}
             db.execute('INSERT OR REPLACE INTO records VALUES(?,?,?)',('import_summary',id,json.dumps(summary,ensure_ascii=False)))
             for p in result.products:
-                self._write_product(db,p)
+                db.execute('INSERT OR REPLACE INTO records VALUES(?,?,?)',('product_source',p.id,p.model_dump_json()))
+                saved=db.execute("SELECT payload FROM records WHERE kind='product_edits' AND id=?",(p.id,)).fetchone()
+                current=p
+                if saved:
+                    edits=json.loads(saved['payload']);updates=edits['updates']
+                    current=Product.model_validate(p.model_dump() | {k:v for k,v in updates.items() if k!='extra'} |
+                        {'extra':p.extra | updates.get('extra',{})})
+                    current.diagnostics=[d for d in current.diagnostics if d.field not in edits.get('resolved_fields',[])]
+                    changed=[k for k,v in updates.items() if k!='extra' and getattr(p,k)!=getattr(current,k)]
+                    if changed:
+                        current.diagnostics.append(Diagnostic(level='warning',code='manual_correction_retained',
+                            message='Correzioni manuali mantenute dopo la nuova importazione: '+', '.join(changed)+'.',
+                            hint='Controlla i nuovi dati originali. Usa «Ripristina dati fornitore» per rimuovere le correzioni del prodotto.',product_id=p.id))
+                self._write_product(db,current)
+                db.execute("UPDATE drafts SET stale=1,payload=json_set(payload,'$.stale',json('true')) WHERE product_id=?",(p.id,))
                 db.execute('INSERT OR IGNORE INTO import_products VALUES(?,?)',(id,p.id))
 
     def get_import(self,id: str) -> dict:
@@ -111,9 +125,36 @@ class Repository:
             raise KeyError(id)
         return Product.model_validate_json(row['payload'])
 
-    def save_product(self,product: Product) -> None:
+    def save_product(self,product: Product,resolved_fields: list[str] | None=None) -> None:
         with self.connection() as db:
+            previous=db.execute('SELECT payload FROM products WHERE id=?',(product.id,)).fetchone()
+            if previous:
+                old=Product.model_validate_json(previous['payload'])
+                saved=db.execute("SELECT payload FROM records WHERE kind='product_edits' AND id=?",(product.id,)).fetchone()
+                edits=json.loads(saved['payload']) if saved else {'updates':{},'resolved_fields':[]}
+                resolved=set(resolved_fields or [])
+                resolved.update(d.field for d in old.diagnostics if d.field and d not in product.diagnostics)
+                fields=('name','brand','family','department','cost','ean','image_urls','available')
+                data=product.model_dump(mode='json')
+                for field in fields:
+                    if getattr(old,field)!=getattr(product,field) or field in resolved:
+                        edits['updates'][field]=data[field]
+                        resolved.add(field)
+                extra={k:v for k,v in product.extra.items() if k not in old.extra or old.extra[k]!=v}
+                if extra:edits['updates']['extra']=edits['updates'].get('extra',{}) | extra
+                edits['resolved_fields']=sorted(set(edits['resolved_fields']) | resolved)
+                db.execute('INSERT OR REPLACE INTO records VALUES(?,?,?)',('product_edits',product.id,json.dumps(edits,ensure_ascii=False)))
             self._write_product(db,product)
+
+    def reset_product_corrections(self,id: str) -> Product:
+        with self.connection() as db:
+            row=db.execute("SELECT payload FROM records WHERE kind='product_source' AND id=?",(id,)).fetchone()
+            if not row:raise DomainError('source_unavailable','Reimporta il prodotto per ripristinare i dati del fornitore.')
+            product=Product.model_validate_json(row['payload'])
+            db.execute("DELETE FROM records WHERE kind='product_edits' AND id=?",(id,))
+            self._write_product(db,product)
+            db.execute("UPDATE drafts SET stale=1,payload=json_set(payload,'$.stale',json('true')) WHERE product_id=?",(id,))
+            return product
 
     def list_products(self,import_id: str | None,filters: ProductFilters,offset: int,limit: int) -> ProductPage:
         where, params = [], []
@@ -205,6 +246,7 @@ class Repository:
         destinations={d.destination for d in drafts}
         with self.connection() as db:
             exported={r['id'] for r in db.execute('SELECT DISTINCT id FROM drafts WHERE exported=1')}
+            exported.update(r['id'] for r in db.execute("SELECT DISTINCT j.value AS id FROM records e JOIN json_each(e.payload,'$.included_ids') j WHERE e.kind='export'"))
             for destination in destinations:
                 db.execute('DELETE FROM drafts WHERE import_id=? AND destination=?',(import_id,destination))
             duplicates=Counter((d.destination,d.reference) for d in drafts)

@@ -144,3 +144,67 @@ def test_price_preview_keeps_euros_and_uses_decimal_margin(tmp_path):
         response=c.post('/api/pricing/preview',json={'cost':'100','price_settings':price_settings().model_dump(mode='json'),'override_gross':'188.999'})
         assert response.status_code==200
         assert response.json()['final_gross']=='188.90' and response.json()['minimum_gross']=='189.90'
+
+def test_exported_base_identity_survives_variant_removal(tmp_path):
+    with TestClient(create_app(tmp_path/'data')) as c:
+        id,products=prepare(c);settings(c);p=products['00123']
+        c.patch('/api/products/'+p['id'],json={'updates':{'extra':{'ebay_category_id':'177925'}}})
+        first=validate(c,id,'base-check');base=next(d for d in first['items'] if d['product_id']==p['id'])
+        job=c.post('/api/exports',json={'import_id':id,'destination':'ebay','request_key':'base-export'}).json()
+        export_id=wait(c,job['id'])['result']['export_id']
+        original=c.get('/api/exports/'+export_id+'/files/prodotti.csv').content
+        c.put('/api/products/'+p['id']+'/compatibilities',json={'rows':[{'id':'model','product_id':p['id'],'make':'Honda','model':'CBR','vehicle_type':'moto'}]})
+        validate(c,id,'model-check')
+        c.put('/api/products/'+p['id']+'/compatibilities',json={'rows':[]})
+        restored=validate(c,id,'restored-check')
+        draft=next(d for d in restored['items'] if d['product_id']==p['id'])
+        assert draft['id']==base['id'] and draft['exported'] is True
+        assert restored['counts']['ready']==0
+        assert c.get('/api/exports/'+export_id+'/files/prodotti.csv').content==original
+
+def test_skipped_import_rows_have_downloadable_report_and_export_counts(tmp_path):
+    with TestClient(create_app(tmp_path/'data')) as c:
+        raw=b'code;name;cost\n001;Pastiglie;100\n;Prodotto senza codice;10\n'
+        u=c.post('/api/uploads',files={'files':('scartati.csv',raw,'text/csv')}).json()['uploads'][0]
+        profile={'id':'skipped','supplier_id':'skipped','name':'Skips','bindings':[{'role':'catalog','column_map':{'code':'code','name':'name','cost':'cost'}}]}
+        assert c.put('/api/supplier-profiles/skipped',json=profile).status_code==200
+        job=c.post('/api/imports',json={'profile_id':'skipped','uploads':[{'upload_id':u['id'],'role':'catalog'}],'request_key':'skipped-import'}).json()
+        id=wait(c,job['id'])['result']['import_id']
+        assert c.get('/api/imports/'+id).json()['diagnostics'][0]['code']=='missing_code'
+        report=c.get('/api/imports/'+id+'/report')
+        assert report.status_code==200
+        rows=list(csv.DictReader(io.StringIO(report.content.decode('utf-8-sig')),delimiter=';'))
+        assert rows[0]['Errore']=='missing_code' and rows[0]['File']=='scartati.csv' and rows[0]['Riga']=='3'
+        settings(c);p=c.get('/api/products',params={'import_id':id}).json()['items'][0]
+        c.patch('/api/products/'+p['id'],json={'updates':{'extra':{'ebay_category_id':'177925'}}})
+        validate(c,id,'skipped-check')
+        export=c.post('/api/exports',json={'import_id':id,'destination':'ebay','request_key':'skipped-export'}).json()
+        export_id=wait(c,export['id'])['result']['export_id']
+        summary=c.get('/api/exports/'+export_id).json()
+        assert summary['import_error_count']==1
+        report=c.get('/api/exports/'+export_id+'/files/rapporto.csv').content.decode('utf-8-sig')
+        assert 'missing_code' in report and 'scartati.csv' in report
+
+def test_reimport_blocks_old_export_and_manual_corrections_can_reset(tmp_path):
+    with TestClient(create_app(tmp_path/'data')) as c:
+        id,products=prepare(c);settings(c);p=products['00123']
+        c.patch('/api/products/'+p['id'],json={'updates':{'name':'Nome manuale','extra':{'ebay_category_id':'177925','notes':'Nota manuale'}}})
+        page=validate(c,id,'old-check');draft=next(d for d in page['items'] if d['product_id']==p['id'])
+        raw=b'code;name;cost;family;department;Qta1\n00123;Nuovo nome;999;Pastiglie Freno;Impianto Frenante;8\n'
+        u=c.post('/api/uploads',files={'files':('nuovo.csv',raw,'text/csv')}).json()['uploads'][0]
+        job=c.post('/api/imports',json={'profile_id':'demo','uploads':[{'upload_id':u['id'],'role':'catalog'}],'request_key':'reimport'}).json()
+        new_id=wait(c,job['id'])['result']['import_id']
+        current=c.get('/api/products/'+p['id']).json()
+        assert current['cost']=='999' and current['name']=='Nome manuale' and current['extra']['notes']=='Nota manuale'
+        old=c.get('/api/imports/'+id+'/drafts',params={'destination':'ebay'}).json()
+        assert next(d for d in old['items'] if d['id']==draft['id'])['stale'] is True
+        job=c.post('/api/exports',json={'import_id':id,'destination':'ebay','selection_mode':'selected','draft_ids':[draft['id']],'request_key':'stale-export'}).json()
+        for _ in range(1000):
+            failed=c.get('/api/jobs/'+job['id']).json()
+            if failed['state']=='failed':break
+            time.sleep(.01)
+        assert failed['state']=='failed' and 'riga valida' in failed['error']
+        reset=c.post('/api/products/'+p['id']+'/reset-corrections')
+        assert reset.status_code==200 and reset.json()['name']=='Nuovo nome'
+        assert reset.json()['cost']=='999' and reset.json()['extra']=={'Qta1':'8'}
+        assert c.get('/api/imports/'+new_id).json()['product_count']==1

@@ -125,6 +125,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/imports/{id}/report": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Report */
+        get: operations["report_api_imports__id__report_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/products": {
         parameters: {
             query?: never;
@@ -158,6 +175,23 @@ export interface paths {
         head?: never;
         /** Edit */
         patch: operations["edit_api_products__id__patch"];
+        trace?: never;
+    };
+    "/api/products/{id}/reset-corrections": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Reset Corrections */
+        post: operations["reset_corrections_api_products__id__reset_corrections_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
         trace?: never;
     };
     "/api/products/{id}/compatibilities": {
@@ -724,6 +758,16 @@ export interface components {
             included_count: number;
             /** Excluded Count */
             excluded_count: number;
+            /**
+             * Import Error Count
+             * @default 0
+             */
+            import_error_count: number;
+            /**
+             * Import Warning Count
+             * @default 0
+             */
+            import_warning_count: number;
             /** Artifacts */
             artifacts: components["schemas"]["Artifact"][];
             /** Diagnostics */
@@ -1512,6 +1556,37 @@ export interface operations {
             };
         };
     };
+    report_api_imports__id__report_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": unknown;
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
     products_api_products_get: {
         parameters: {
             query?: {
@@ -1595,6 +1670,37 @@ export interface operations {
                 "application/json": components["schemas"]["ProductUpdate"];
             };
         };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Product"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    reset_corrections_api_products__id__reset_corrections_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
         responses: {
             /** @description Successful Response */
             200: {

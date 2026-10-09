@@ -91,6 +91,8 @@ class ExportSummary(Model):
     destination: str
     included_count: int
     excluded_count: int
+    import_error_count: int = 0
+    import_warning_count: int = 0
     artifacts: list[Artifact]
     diagnostics: list[Diagnostic]
     created_at: str
@@ -98,4 +100,5 @@ class ExportSummary(Model):
 def summarize_export(record: ExportRecord) -> ExportSummary:
     return ExportSummary(id=record.id,import_id=record.import_id,destination=record.destination,
         included_count=len(record.included_ids),excluded_count=len(record.excluded_ids),artifacts=record.artifacts,
+        import_error_count=record.snapshot.get('import_error_count',0),import_warning_count=record.snapshot.get('import_warning_count',0),
         diagnostics=record.diagnostics,created_at=record.created_at)

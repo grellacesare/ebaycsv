@@ -8,6 +8,7 @@ from ..domain import Progress, ProgressCallback, Diagnostic
 from ..storage import Repository
 from ..platforms.profiles import EbayProfile, PrestashopProfile
 from ..errors import DomainError
+from ..importing.reporting import REPORT_COLUMNS, import_report_row
 
 def export_selected(repo: Repository,import_id: str,destination: str,draft_ids: list[str],output_dir: Path,progress: ProgressCallback) -> ExportRecord:
     output_dir=Path(output_dir)
@@ -15,6 +16,7 @@ def export_selected(repo: Repository,import_id: str,destination: str,draft_ids: 
     except KeyError:pass
     selected=list(dict.fromkeys(draft_ids))
     included,excluded,summaries,report=[],[],[],[]
+    source_diagnostics=[Diagnostic.model_validate(d) for d in repo.get_import_summary(import_id)['diagnostics']]
     try:
         settings=repo.get_record('validation',import_id+':'+destination)
         profile=(EbayProfile if destination=='ebay' else PrestashopProfile).model_validate(settings['profile'])
@@ -40,7 +42,8 @@ def export_selected(repo: Repository,import_id: str,destination: str,draft_ids: 
     report_path=output_dir/'rapporto.csv'
     with report_path.open('w',encoding='utf-8-sig',newline='') as handle:
         writer=csv.writer(handle,delimiter=';',lineterminator='\r\n')
-        writer.writerow(['Riferimento','Codice prodotto','Livello','Errore','Messaggio','File','Riga','Campo','Valore','Correzione'])
+        writer.writerow(REPORT_COLUMNS)
+        writer.writerows(import_report_row(d) for d in source_diagnostics)
         for draft,d in report:
             writer.writerow([draft.reference,repo.get_product(draft.product_id).code,d.level,d.code,d.message,
                 d.source.file if d.source else '',d.source.row if d.source else '',d.field or '',d.value or '',d.hint])
@@ -53,7 +56,9 @@ def export_selected(repo: Repository,import_id: str,destination: str,draft_ids: 
     artifacts=[Artifact(name=Path(p).name,size=size,rows=count,kind='csv') for p,size,count in zip(parts.paths,parts.sizes,parts.row_counts)]
     artifacts.extend([Artifact(name=report_path.name,size=report_path.stat().st_size,kind='report'),Artifact(name=zip_path.name,size=zip_path.stat().st_size,kind='zip')])
     record=ExportRecord(id=output_dir.name,import_id=import_id,destination=destination,included_ids=included,excluded_ids=excluded,
-        snapshot={'profile':profile.model_dump(mode='json'),'rows':summaries},artifacts=artifacts,diagnostics=parts.diagnostics,
+        snapshot={'profile':profile.model_dump(mode='json'),'rows':summaries,
+            'import_error_count':sum(d.level=='error' for d in source_diagnostics),
+            'import_warning_count':sum(d.level=='warning' for d in source_diagnostics)},artifacts=artifacts,diagnostics=parts.diagnostics,
         directory=str(output_dir),created_at=datetime.now(timezone.utc).isoformat())
     repo.record_export(record)
     return record

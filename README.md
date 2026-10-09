@@ -48,6 +48,8 @@ Il percorso predefinito è `var/`, oppure `MW_DATA_DIR` se impostato. Comprende 
 
 Profili, correzioni, compatibilità e storico persistono al riavvio nella stessa cartella. Un lavoro interrotto viene segnalato e può essere ripreso. Le modifiche ai prodotti e alle impostazioni attendono la fine del lavoro in corso.
 
+Una nuova importazione dello stesso fornitore/codice aggiorna i dati sorgente e richiede un nuovo controllo delle bozze interessate. Le correzioni manuali restano salvate separatamente: un costo non corretto manualmente segue il nuovo CSV; un costo corretto viene mantenuto con avviso. «Ripristina dati fornitore» rimuove le correzioni comuni e recupera l’ultimo CSV. Le segnalazioni dell’importazione, comprese le righe prive di codice che non diventano prodotti, sono visibili e scaricabili anche prima di generare le bozze; sono incluse pure nei rapporti di esportazione.
+
 Il repertorio iniziale contiene 714 ID eBay estratti dal builder e 21 categorie del negozio PrestaShop allegato. Le categorie eBay vengono assegnate automaticamente soltanto nei casi riconosciuti e univoci Moto/Scooter; le altre richiedono una scelta manuale salvabile. Il repertorio non è una verifica in tempo reale della tassonomia eBay. Puoi sostituire i repertori nelle Impostazioni; le associazioni non più valide vengono segnalate.
 
 [Guida caricamento eBay / PrestaShop](docs/import-platforms.md).

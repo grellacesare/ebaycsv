@@ -25,8 +25,13 @@ def edit(id: str,payload: ProductUpdate,request: Request):
     fixed=set(payload.resolve_fields)&set(updates)
     updates['diagnostics']=[d for d in product.diagnostics if d.field not in fixed]
     product=Product.model_validate(product.model_dump() | updates)
-    ctx.repo.save_product(product);ctx.repo.mark_stale(product_id=id)
+    ctx.repo.save_product(product,resolved_fields=list(fixed));ctx.repo.mark_stale(product_id=id)
     return product
+
+@router.post('/products/{id}/reset-corrections',response_model=Product)
+def reset_corrections(id: str,request: Request):
+    ctx=request.app.state.context;ctx.ensure_idle();ctx.repo.get_product(id)
+    return ctx.repo.reset_product_corrections(id)
 
 @router.get('/products/{id}/compatibilities',response_model=list[Compatibility])
 def fitments(id: str,request: Request):return request.app.state.context.repo.get_compatibilities(id)

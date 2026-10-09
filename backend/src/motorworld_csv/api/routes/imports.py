@@ -1,12 +1,13 @@
 from pathlib import Path
 from uuid import uuid4
 from fastapi import APIRouter, Request, UploadFile, Query
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 from ..schemas import UploadResult, UploadInfo, ImportRequest, ImportSummary, StoredUpload
 from ...importing.models import ImportProfile, CsvInspection
 from ...importing.csv_reader import inspect_csv
 from ...jobs import Job
 from ...errors import DomainError
+from ...importing.reporting import import_report_bytes
 
 router=APIRouter()
 
@@ -59,3 +60,9 @@ def imports(request: Request):
 
 @router.get('/imports/{id}',response_model=ImportSummary)
 def detail(id: str,request: Request):return request.app.state.context.import_summary(id)
+
+@router.get('/imports/{id}/report')
+def report(id: str,request: Request):
+    summary=request.app.state.context.import_summary(id)
+    return Response(import_report_bytes(summary.diagnostics),media_type='text/csv; charset=utf-8',
+        headers={'Content-Disposition':'attachment; filename="rapporto-importazione.csv"'})

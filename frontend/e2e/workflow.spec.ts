@@ -3,11 +3,14 @@ import { execFileSync } from 'node:child_process';
 function readCsv(path:string){return JSON.parse(execFileSync('python',['-c',"import csv,json,sys; r=list(csv.DictReader(open(sys.argv[1],encoding='utf-8-sig',newline=''),delimiter=';')); print(json.dumps([{'sku':x['Custom label (SKU)'],'title':x['Title'],'price':x['Start Price'],'manufacturer':x['Manufacturer Name']} for x in r]))",path],{encoding:'utf8'}));}
 test('imports_edits_and_downloads_valid_csv',async({page},info)=>{
   await page.goto('/');
-  await page.getByLabel('File del fornitore',{exact:true}).setInputFiles({name:'fornitore-demo.csv',mimeType:'text/csv',buffer:Buffer.from('CodiceProdotto;DescrizioneITA;PrezzoBase;CategoriaITA;CompartoITA;Brand;Ean\n00123;Pastiglie freno;100;Pastiglie Freno;Impianto Frenante;Ferodo;1234567890123\n00123;Pastiglie freno;100;Pastiglie Freno;Impianto Frenante;Ferodo;9876543210123\n')});
+  await page.getByLabel('File del fornitore',{exact:true}).setInputFiles({name:'fornitore-demo.csv',mimeType:'text/csv',buffer:Buffer.from('CodiceProdotto;DescrizioneITA;PrezzoBase;CategoriaITA;CompartoITA;Brand;Ean\n00123;Pastiglie freno;100;Pastiglie Freno;Impianto Frenante;Ferodo;1234567890123\n00123;Pastiglie freno;100;Pastiglie Freno;Impianto Frenante;Ferodo;9876543210123\n;Senza codice;10;Pastiglie Freno;Impianto Frenante;Ferodo;\n')});
   await page.getByLabel('Nome profilo',{exact:true}).fill('Fornitore demo');await page.getByLabel('Codice fornitore',{exact:true}).fill('demo');
   await page.getByLabel('Costo di acquisto IVA esclusa',{exact:true}).selectOption('PrezzoBase');
   await page.getByRole('button',{name:'Salva profilo e importa'}).click();
   await expect(page.getByText('Importazione completata')).toBeVisible();
+  await expect(page.getByText('Codice prodotto mancante.',{exact:true})).toBeVisible();
+  const issueDownload=page.waitForEvent('download');await page.getByRole('link',{name:'Scarica rapporto importazione'}).click();
+  const issueReport=execFileSync('python',['-c',"import pathlib,sys; print(pathlib.Path(sys.argv[1]).read_text(encoding='utf-8-sig'))",(await (await issueDownload).path())!],{encoding:'utf8'});expect(issueReport).toContain('missing_code');
   await page.getByRole('button',{name:'Prodotti e compatibilità',exact:true}).click();
   await page.getByRole('button',{name:'Apri 00123'}).click();
   await page.getByLabel('Conferma correzione EAN',{exact:true}).check();await page.getByRole('button',{name:'Salva prodotto'}).click();
@@ -34,7 +37,7 @@ test('imports_edits_and_downloads_valid_csv',async({page},info)=>{
   await page.getByRole('button',{name:'Salva bozza'}).click();
   await page.getByRole('button',{name:'Controlla lotto'}).click();await expect(page.getByText('Controllo completato')).toBeVisible();
   await expect(page.getByText('Da correggere',{exact:true})).toBeVisible();
-  await page.screenshot({path:info.outputPath('desktop.png'),fullPage:true});
+  await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:info.outputPath('desktop.png'),fullPage:true});
   await page.getByRole('button',{name:'Esporta righe valide'}).click();
   await expect(page.getByText('Esportazione completata')).toBeVisible();
   const firstDownload=page.waitForEvent('download');await page.getByRole('link',{name:'Scarica CSV',exact:true}).first().click();
