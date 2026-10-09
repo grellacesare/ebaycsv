@@ -88,12 +88,17 @@ class Repository:
             'source_counts':result.source_counts,'product_count':len(result.products)}
         with self.connection() as db:
             db.execute('INSERT OR REPLACE INTO records VALUES(?,?,?)',('import',id,json.dumps(payload,ensure_ascii=False)))
+            summary={k:v for k,v in payload.items() if k!='original_products'}
+            db.execute('INSERT OR REPLACE INTO records VALUES(?,?,?)',('import_summary',id,json.dumps(summary,ensure_ascii=False)))
             for p in result.products:
                 self._write_product(db,p)
                 db.execute('INSERT OR IGNORE INTO import_products VALUES(?,?)',(id,p.id))
 
     def get_import(self,id: str) -> dict:
         return self.get_record('import',id)
+
+    def get_import_summary(self,id: str) -> dict:
+        return self.get_record('import_summary',id)
 
     def _write_product(self,db,product):
         db.execute('INSERT INTO products VALUES(?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name,available=excluded.available,payload=excluded.payload',

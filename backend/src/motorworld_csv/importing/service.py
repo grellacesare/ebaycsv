@@ -37,10 +37,10 @@ def import_catalog(sources: list[InputSource], profile: ImportProfile, progress:
         b = bindings[s.role]
         view = inspect_csv(s.path,b.encoding,b.delimiter)
         if any(d.level=='error' for d in view.diagnostics):
-            raise DomainError('invalid_file',f'{s.path.name}: '+view.diagnostics[0].message)
+            raise DomainError('invalid_file',f'{s.name or s.path.name}: '+view.diagnostics[0].message)
         missing = set(b.column_map.values()) - set(view.columns)
         if missing:
-            raise DomainError('profile_mismatch',f'{s.path.name}: colonne mancanti: '+', '.join(sorted(missing)))
+            raise DomainError('profile_mismatch',f'{s.name or s.path.name}: colonne mancanti: '+', '.join(sorted(missing)))
         inspections[s.id] = view
     products, diagnostics, counts = {}, [], {}
     seen_values: dict[tuple[str,str], set[str]] = {}
@@ -53,6 +53,7 @@ def import_catalog(sources: list[InputSource], profile: ImportProfile, progress:
         counts[source.id] = 0
         try:
             for ref, raw in iter_rows(source.path,binding):
+                ref.file=source.name or source.path.name
                 counts[source.id] += 1
                 if counts[source.id] % 100 == 0:
                     progress(Progress(stage=stage,completed=counts[source.id],total=total))
@@ -118,7 +119,7 @@ def import_catalog(sources: list[InputSource], profile: ImportProfile, progress:
                         p.extra.setdefault(key,value)
             progress(Progress(stage=stage,completed=counts[source.id],total=total))
         except (csv.Error, UnicodeError) as exc:
-            raise DomainError('invalid_csv',f'{source.path.name}: {exc}') from exc
+            raise DomainError('invalid_csv',f'{source.name or source.path.name}: {exc}') from exc
     for p in products.values():
         if p.cost is None and not any(d.code in ('invalid_cost','conflicting_cost') for d in p.diagnostics):
             p.diagnostics.append(issue('missing_cost','Costo d’acquisto IVA esclusa mancante.',product_id=p.id,field='cost'))

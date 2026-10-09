@@ -42,6 +42,7 @@ class InputSource(Model):
     id: str
     path: Path
     role: Role
+    name: str | None = None
 
 class CsvInspection(Model):
     columns: list[str] = Field(default_factory=list)

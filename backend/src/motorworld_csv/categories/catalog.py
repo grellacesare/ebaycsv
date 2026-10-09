@@ -13,15 +13,19 @@ def load_catalog(resources_dir: Path) -> CategoryCatalog:
 
 def import_prestashop_categories(path: Path) -> list[StoreCategory]:
     result=[]
-    with path.open(encoding='utf-8-sig',newline='') as f:
-        reader=csv.DictReader(f,delimiter=';')
-        if not {'Id','Nome','Mostrata'} <= set(reader.fieldnames or []):
-            raise DomainError('invalid_category_file','Il repertorio deve avere Id, Nome e Mostrata.')
-        for row in reader:
-            id=row['Id'].strip()
-            if not id.isdigit() or int(id)<=0 or not row['Nome'].strip() or row['Mostrata'] not in ('0','1'):
-                raise DomainError('invalid_category_file',f'Categoria non valida alla riga {reader.line_num}.')
-            result.append(StoreCategory(id=id,name=row['Nome'],description=row.get('Descrizione',''),position=int(row.get('Posizione') or 0),shown=row['Mostrata']=='1'))
+    try:
+        with path.open(encoding='utf-8-sig',newline='') as f:
+            reader=csv.DictReader(f,delimiter=';',strict=True)
+            if not {'Id','Nome','Mostrata'} <= set(reader.fieldnames or []):
+                raise DomainError('invalid_category_file','Il repertorio deve avere Id, Nome e Mostrata.')
+            for row in reader:
+                id=(row.get('Id') or '').strip()
+                if not id.isdigit() or int(id)<=0 or not (row.get('Nome') or '').strip() or row.get('Mostrata') not in ('0','1'):
+                    raise DomainError('invalid_category_file',f'Categoria non valida alla riga {reader.line_num}.')
+                result.append(StoreCategory(id=id,name=row['Nome'],description=row.get('Descrizione') or '',position=int(row.get('Posizione') or 0),shown=row['Mostrata']=='1'))
+    except DomainError:raise
+    except (ValueError,UnicodeError,csv.Error) as exc:
+        raise DomainError('invalid_category_file','Correggi il file categorie: UTF-8, separatore ; e posizione numerica.') from exc
     if not result or len({r.id for r in result})!=len(result):
         raise DomainError('invalid_category_file','Categorie vuote o ID duplicati.')
     return result
