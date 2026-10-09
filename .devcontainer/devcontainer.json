@@ -1,0 +1,20 @@
+{
+  "name": "Motor World CSV Studio",
+  "build": { "dockerfile": "Dockerfile" },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "24" }
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "bash .devcontainer/install.sh",
+  "postStartCommand": "bash .devcontainer/start.sh",
+  "waitFor": "postStartCommand",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Motor World CSV Studio",
+      "onAutoForward": "openBrowser",
+      "protocol": "http"
+    }
+  },
+  "otherPortsAttributes": { "onAutoForward": "ignore" }
+}

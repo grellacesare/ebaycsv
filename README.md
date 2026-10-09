@@ -4,6 +4,11 @@ App personale in italiano per trasformare CSV di fornitori diversi in **nuove in
 
 Importazione con anteprima e profili salvati, collegamento di anagrafica/prezzi/pesi tramite codice, editor delle compatibilità, template del builder Motor World, prezzi e margine verificati, controllo degli errori ed esportazione parziale. Ogni campo personalizzabile ha un aiuto «?» utilizzabile con mouse, tastiera o tocco.
 
+[![Apri con GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/grellacesare/ebaycsv)
+
+Per usarla dal browser con accesso GitHub riservato, la [guida Codespaces](docs/codespaces.md)
+descrive creazione, avvio automatico, archivio persistente e backup.
+
 ## Avvio
 
 Requisiti: Python 3.12+, `uv`, Node 24 e npm. Dalla root del repository:
