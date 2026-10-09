@@ -3,8 +3,10 @@ from contextlib import contextmanager
 from datetime import datetime, timezone
 import json
 import sqlite3
+from collections import Counter
 from pydantic import Field
-from .domain import Model, Product, Compatibility, ListingOverrides
+from .domain import Model, Product, Compatibility, ListingOverrides, ListingDraft, Diagnostic
+from .errors import DomainError
 from .importing.models import ImportProfile, ImportResult
 
 class ProductFilters(Model):
@@ -17,6 +19,11 @@ class ProductFilters(Model):
 class ProductPage(Model):
     items: list[Product]
     total: int
+
+class DraftPage(Model):
+    items: list[ListingDraft]
+    total: int
+    counts: dict[str,int]
 
 class Repository:
     def __init__(self,db_path: Path):
@@ -35,6 +42,10 @@ class Repository:
                 CREATE TABLE IF NOT EXISTS jobs(id TEXT PRIMARY KEY,kind TEXT NOT NULL,request_key TEXT NOT NULL UNIQUE,state TEXT NOT NULL,payload TEXT NOT NULL);
                 CREATE INDEX IF NOT EXISTS product_search ON products(code,name);
                 CREATE INDEX IF NOT EXISTS membership_product ON import_products(product_id);
+                CREATE TABLE IF NOT EXISTS drafts(import_id TEXT NOT NULL,id TEXT NOT NULL,product_id TEXT NOT NULL,destination TEXT NOT NULL,reference TEXT NOT NULL,title TEXT NOT NULL,valid INTEGER NOT NULL,exported INTEGER NOT NULL,stale INTEGER NOT NULL,payload TEXT NOT NULL,PRIMARY KEY(import_id,id));
+                CREATE INDEX IF NOT EXISTS draft_product ON drafts(product_id);
+                CREATE INDEX IF NOT EXISTS draft_reference ON drafts(destination,reference);
+                UPDATE schema_version SET version=2 WHERE version<2;
             ''')
 
     @contextmanager
@@ -104,9 +115,17 @@ class Repository:
         if import_id:
             where.append('p.id IN (SELECT product_id FROM import_products WHERE import_id=?)'); params.append(import_id)
         if filters.query:
-            where.append('(p.code LIKE ? OR p.name LIKE ?)');params.extend(['%'+filters.query+'%']*2)
+            where.append('(p.code LIKE ? OR p.name LIKE ? OR EXISTS(SELECT 1 FROM drafts d WHERE d.product_id=p.id AND d.title LIKE ?))');params.extend(['%'+filters.query+'%']*3)
         if filters.available is not None:
             where.append('p.available=?'); params.append(int(filters.available))
+        if filters.category_id or filters.state:
+            dwhere=['d.product_id=p.id']
+            if import_id:dwhere.append('d.import_id=?');params.append(import_id)
+            if filters.destination:dwhere.append('d.destination=?');params.append(filters.destination)
+            if filters.category_id:
+                dwhere.append("EXISTS(SELECT 1 FROM json_each(d.payload,'$.category_ids') c WHERE c.value=?)");params.append(filters.category_id)
+            if filters.state:dwhere.append(self._state_clause(filters.state,'d.'))
+            where.append('EXISTS(SELECT 1 FROM drafts d WHERE '+' AND '.join(dwhere)+')')
         clause = ' WHERE '+' AND '.join(where) if where else ''
         with self.connection() as db:
             total=db.execute('SELECT COUNT(*) FROM products p'+clause,params).fetchone()[0]
@@ -129,9 +148,8 @@ class Repository:
                 db.execute('INSERT OR REPLACE INTO overrides VALUES(?,?)',(row.listing_id,row.model_dump_json()))
 
     def get_overrides(self,product_id: str) -> dict[str,ListingOverrides]:
-        # IDs encode a hash rather than a product key; callers select only their known draft IDs.
         with self.connection() as db:
-            return {r['listing_id']:ListingOverrides.model_validate_json(r['payload']) for r in db.execute('SELECT * FROM overrides')}
+            return {r['listing_id']:ListingOverrides.model_validate_json(r['payload']) for r in db.execute('SELECT DISTINCT o.listing_id,o.payload FROM overrides o JOIN drafts d ON o.listing_id=d.id WHERE d.product_id=?',(product_id,))}
 
     def save_job(self,job):
         with self.connection() as db:
@@ -175,3 +193,81 @@ class Repository:
         cls=EbayProfile if destination=='ebay' else PrestashopProfile
         try:return cls.model_validate(self.get_record('platform_profile',destination))
         except KeyError:return cls()
+
+    def save_drafts(self,import_id: str,drafts: list[ListingDraft]) -> None:
+        if len({d.id for d in drafts})!=len(drafts):
+            raise DomainError('listing_identity_collision','Riferimenti interni duplicati: correggi le compatibilità.')
+        destinations={d.destination for d in drafts}
+        with self.connection() as db:
+            exported={r['id'] for r in db.execute('SELECT DISTINCT id FROM drafts WHERE exported=1')}
+            for destination in destinations:
+                db.execute('DELETE FROM drafts WHERE import_id=? AND destination=?',(import_id,destination))
+            duplicates=Counter((d.destination,d.reference) for d in drafts)
+            existing={(r['destination'],r['reference']):r['product_id'] for r in db.execute('SELECT destination,reference,product_id FROM drafts')}
+            for draft in drafts:
+                d=draft.model_copy(deep=True);d.exported=d.id in exported
+                if duplicates[(d.destination,d.reference)]>1 or (existing.get((d.destination,d.reference)) not in (None,d.product_id)):
+                    d.valid=False
+                    d.diagnostics.append(Diagnostic(level='error',code='duplicate_reference',message='Riferimento già utilizzato per un altro prodotto/inserzione.',hint='Imposta un prefisso o un riferimento univoco.',field='reference',value=d.reference,product_id=d.product_id,listing_id=d.id))
+                db.execute('INSERT INTO drafts VALUES(?,?,?,?,?,?,?,?,?,?)',(import_id,d.id,d.product_id,d.destination,d.reference,d.title,d.valid,d.exported,d.stale,d.model_dump_json()))
+
+    def get_draft(self,id: str,import_id: str | None=None) -> ListingDraft:
+        with self.connection() as db:
+            sql='SELECT payload FROM drafts WHERE id=?';params=[id]
+            if import_id:sql+=' AND import_id=?';params.append(import_id)
+            row=db.execute(sql+' ORDER BY rowid DESC LIMIT 1',params).fetchone()
+        if not row:raise KeyError(id)
+        return ListingDraft.model_validate_json(row['payload'])
+
+    @staticmethod
+    def _state_clause(state: str,prefix=''):
+        p=prefix
+        return {'ready':f'{p}valid=1 AND {p}stale=0 AND {p}exported=0','valid':f'{p}valid=1 AND {p}stale=0',
+            'errors':f'({p}valid=0 OR {p}stale=1)','exported':f'{p}exported=1','stale':f'{p}stale=1',
+            'warnings':f"EXISTS(SELECT 1 FROM json_each({p}payload,'$.diagnostics') j WHERE json_extract(j.value,'$.level')='warning')"}.get(state,'1=1')
+
+    def list_drafts(self,import_id: str,destination: str,state: str | None,offset: int,limit: int,
+        query: str='',category_id: str | None=None,available: bool | None=None) -> DraftPage:
+        where=['import_id=?','destination=?'];params=[import_id,destination]
+        if state:where.append(self._state_clause(state))
+        if query:
+            where.append('(title LIKE ? OR product_id IN (SELECT id FROM products WHERE code LIKE ?))');params.extend(['%'+query+'%']*2)
+        if category_id:
+            where.append("EXISTS(SELECT 1 FROM json_each(payload,'$.category_ids') c WHERE c.value=?)");params.append(category_id)
+        if available is not None:
+            where.append('product_id IN (SELECT id FROM products WHERE available=?)');params.append(int(available))
+        with self.connection() as db:
+            clause=' WHERE '+' AND '.join(where)
+            total=db.execute('SELECT COUNT(*) FROM drafts'+clause,params).fetchone()[0]
+            items=[ListingDraft.model_validate_json(r['payload']) for r in db.execute('SELECT payload FROM drafts'+clause+' ORDER BY rowid LIMIT ? OFFSET ?',params+[limit,offset])]
+            counts={'total':db.execute('SELECT COUNT(*) FROM drafts WHERE import_id=? AND destination=?',(import_id,destination)).fetchone()[0]}
+            for name in ('ready','errors','warnings','exported','stale'):
+                counts[name]=db.execute('SELECT COUNT(*) FROM drafts WHERE import_id=? AND destination=? AND '+self._state_clause(name),(import_id,destination)).fetchone()[0]
+        return DraftPage(items=items,total=total,counts=counts)
+
+    def iter_drafts(self,import_id: str,destination: str):
+        with self.connection() as db:
+            for row in db.execute('SELECT payload FROM drafts WHERE import_id=? AND destination=? ORDER BY rowid',(import_id,destination)):
+                yield ListingDraft.model_validate_json(row['payload'])
+
+    def mark_stale(self,product_id: str | None=None,destination: str | None=None,import_id: str | None=None):
+        where=[];params=[]
+        for field,value in [('product_id',product_id),('destination',destination),('import_id',import_id)]:
+            if value is not None:where.append(field+'=?');params.append(value)
+        with self.connection() as db:
+            db.execute("UPDATE drafts SET stale=1,payload=json_set(payload,'$.stale',json('true'))"+(' WHERE '+' AND '.join(where) if where else ''),params)
+
+    def record_export(self,export):
+        with self.connection() as db:
+            db.execute('INSERT OR IGNORE INTO records VALUES(?,?,?)',('export',export.id,export.model_dump_json()))
+            for start in range(0,len(export.included_ids),500):
+                ids=export.included_ids[start:start+500]
+                db.execute("UPDATE drafts SET exported=1,payload=json_set(payload,'$.exported',json('true')) WHERE id IN ("+','.join('?' for _ in ids)+')',ids)
+
+    def get_export(self,id: str):
+        from .exporting.contracts import ExportRecord
+        return ExportRecord.model_validate(self.get_record('export',id))
+
+    def list_exports(self,import_id: str | None=None):
+        from .exporting.contracts import ExportRecord
+        return [ExportRecord.model_validate(r) for r in self.list_records('export') if import_id is None or r['import_id']==import_id]
