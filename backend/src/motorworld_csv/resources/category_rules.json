@@ -1,0 +1,44 @@
+[
+  {
+    "family": "Carburatori",
+    "context": "moto",
+    "destination": "ebay",
+    "category_id": "177773"
+  },
+  {
+    "family": "Carburatori",
+    "context": "scooter",
+    "destination": "ebay",
+    "category_id": "82205"
+  },
+  {
+    "family": "Filtri aria",
+    "context": "moto",
+    "destination": "ebay",
+    "category_id": "177771"
+  },
+  {
+    "family": "Filtri aria",
+    "context": "scooter",
+    "destination": "ebay",
+    "category_id": "182241"
+  },
+  {
+    "family": "Pastiglie freno",
+    "context": "moto",
+    "destination": "ebay",
+    "category_id": "177925"
+  },
+  {
+    "family": "Batterie",
+    "context": "moto",
+    "destination": "ebay",
+    "category_id": "49782"
+  },
+  {
+    "family": "Candele",
+    "context": "moto",
+    "destination": "ebay",
+    "category_id": "177958"
+  }
+]

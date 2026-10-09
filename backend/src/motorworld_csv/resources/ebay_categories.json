@@ -1,0 +1,3572 @@
+[
+  {
+    "id": "177112",
+    "path": "Abbigliamento da fuoristrada",
+    "context": "unknown"
+  },
+  {
+    "id": "177122",
+    "path": "Abbigliamento da fuoristrada > Altro vestiario fuoristrada",
+    "context": "unknown"
+  },
+  {
+    "id": "177121",
+    "path": "Abbigliamento da fuoristrada > Calze",
+    "context": "unknown"
+  },
+  {
+    "id": "177118",
+    "path": "Abbigliamento da fuoristrada > Casacche",
+    "context": "unknown"
+  },
+  {
+    "id": "177117",
+    "path": "Abbigliamento da fuoristrada > Giacche",
+    "context": "unknown"
+  },
+  {
+    "id": "177116",
+    "path": "Abbigliamento da fuoristrada > Guanti",
+    "context": "unknown"
+  },
+  {
+    "id": "177119",
+    "path": "Abbigliamento da fuoristrada > Kit e completi",
+    "context": "unknown"
+  },
+  {
+    "id": "177120",
+    "path": "Abbigliamento da fuoristrada > Pantaloni",
+    "context": "unknown"
+  },
+  {
+    "id": "177114",
+    "path": "Abbigliamento da fuoristrada > Ricambi per stivali",
+    "context": "unknown"
+  },
+  {
+    "id": "177115",
+    "path": "Abbigliamento da fuoristrada > Stivali",
+    "context": "unknown"
+  },
+  {
+    "id": "177093",
+    "path": "Abbigliamento da meccanico",
+    "context": "unknown"
+  },
+  {
+    "id": "177098",
+    "path": "Abbigliamento da meccanico > Altro abbigliamento meccanico",
+    "context": "unknown"
+  },
+  {
+    "id": "177095",
+    "path": "Abbigliamento da meccanico > Guanti",
+    "context": "unknown"
+  },
+  {
+    "id": "177097",
+    "path": "Abbigliamento da meccanico > Protezioni",
+    "context": "unknown"
+  },
+  {
+    "id": "177094",
+    "path": "Abbigliamento da meccanico > Stivali e calzature",
+    "context": "unknown"
+  },
+  {
+    "id": "177096",
+    "path": "Abbigliamento da meccanico > Tute e completi",
+    "context": "unknown"
+  },
+  {
+    "id": "177086",
+    "path": "Abbigliamento per auto e kart",
+    "context": "unknown"
+  },
+  {
+    "id": "177092",
+    "path": "Abbigliamento per auto e kart > Altro abbigliamento auto, kart",
+    "context": "unknown"
+  },
+  {
+    "id": "177088",
+    "path": "Abbigliamento per auto e kart > Guanti da corsa",
+    "context": "unknown"
+  },
+  {
+    "id": "177091",
+    "path": "Abbigliamento per auto e kart > Intimo tecnico",
+    "context": "unknown"
+  },
+  {
+    "id": "177089",
+    "path": "Abbigliamento per auto e kart > Protezioni da corsa",
+    "context": "unknown"
+  },
+  {
+    "id": "177087",
+    "path": "Abbigliamento per auto e kart > Stivali da corsa",
+    "context": "unknown"
+  },
+  {
+    "id": "177090",
+    "path": "Abbigliamento per auto e kart > Tute da corsa",
+    "context": "unknown"
+  },
+  {
+    "id": "177099",
+    "path": "Abbigliamento per moto",
+    "context": "unknown"
+  },
+  {
+    "id": "177107",
+    "path": "Abbigliamento per moto > Abbigliamento pioggia",
+    "context": "unknown"
+  },
+  {
+    "id": "177108",
+    "path": "Abbigliamento per moto > Calze",
+    "context": "unknown"
+  },
+  {
+    "id": "183519",
+    "path": "Abbigliamento per moto > Copripantaloni",
+    "context": "unknown"
+  },
+  {
+    "id": "183518",
+    "path": "Abbigliamento per moto > Copriscarpe",
+    "context": "unknown"
+  },
+  {
+    "id": "184476",
+    "path": "Abbigliamento per moto > Felpe",
+    "context": "unknown"
+  },
+  {
+    "id": "177104",
+    "path": "Abbigliamento per moto > Giacche e giubbotti",
+    "context": "unknown"
+  },
+  {
+    "id": "177110",
+    "path": "Abbigliamento per moto > Gilet e smanicati",
+    "context": "unknown"
+  },
+  {
+    "id": "177103",
+    "path": "Abbigliamento per moto > Guanti",
+    "context": "unknown"
+  },
+  {
+    "id": "177100",
+    "path": "Abbigliamento per moto > Intimo e maglie tecniche",
+    "context": "unknown"
+  },
+  {
+    "id": "177109",
+    "path": "Abbigliamento per moto > Pantaloni",
+    "context": "unknown"
+  },
+  {
+    "id": "50427",
+    "path": "Abbigliamento per moto > Spille e toppe",
+    "context": "unknown"
+  },
+  {
+    "id": "177074",
+    "path": "Abbigliamento, caschi e protezioni",
+    "context": "unknown"
+  },
+  {
+    "id": "177111",
+    "path": "Altro abbigliamento per moto",
+    "context": "unknown"
+  },
+  {
+    "id": "25645",
+    "path": "Altro accessori moto",
+    "context": "unknown"
+  },
+  {
+    "id": "122234",
+    "path": "Altro decalcomanie e emblemi",
+    "context": "unknown"
+  },
+  {
+    "id": "63700",
+    "path": "Altro equipaggiamenti officine",
+    "context": "unknown"
+  },
+  {
+    "id": "43998",
+    "path": "Altro garage",
+    "context": "unknown"
+  },
+  {
+    "id": "177961",
+    "path": "Altro impianto elettrico",
+    "context": "unknown"
+  },
+  {
+    "id": "65310",
+    "path": "Altro luci e frecce",
+    "context": "unknown"
+  },
+  {
+    "id": "34210",
+    "path": "Altro manuali e istruzioni",
+    "context": "unknown"
+  },
+  {
+    "id": "177980",
+    "path": "Altro motore e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "179503",
+    "path": "Altro oli e fluidi",
+    "context": "unknown"
+  },
+  {
+    "id": "179753",
+    "path": "Altro ricambi moto",
+    "context": "unknown"
+  },
+  {
+    "id": "25640",
+    "path": "Altro ricambi scooter",
+    "context": "scooter"
+  },
+  {
+    "id": "65375",
+    "path": "Altro selle",
+    "context": "unknown"
+  },
+  {
+    "id": "178018",
+    "path": "Altro strumentazione e indicatori",
+    "context": "unknown"
+  },
+  {
+    "id": "35625",
+    "path": "Altro utensili a mano",
+    "context": "unknown"
+  },
+  {
+    "id": "177123",
+    "path": "Altro vestiario e protezioni",
+    "context": "unknown"
+  },
+  {
+    "id": "183504",
+    "path": "Armature e protezioni",
+    "context": "unknown"
+  },
+  {
+    "id": "177101",
+    "path": "Armature e protezioni > Altro armature e protezioni",
+    "context": "unknown"
+  },
+  {
+    "id": "183513",
+    "path": "Armature e protezioni > Collari e supporti collo",
+    "context": "unknown"
+  },
+  {
+    "id": "183511",
+    "path": "Armature e protezioni > Fasce lombari",
+    "context": "unknown"
+  },
+  {
+    "id": "183512",
+    "path": "Armature e protezioni > Ginocchiere e parastinchi",
+    "context": "unknown"
+  },
+  {
+    "id": "183509",
+    "path": "Armature e protezioni > Gomitiere e protezioni spalle",
+    "context": "unknown"
+  },
+  {
+    "id": "183506",
+    "path": "Armature e protezioni > Pantaloncini protettivi",
+    "context": "unknown"
+  },
+  {
+    "id": "183507",
+    "path": "Armature e protezioni > Paraschiena",
+    "context": "unknown"
+  },
+  {
+    "id": "183508",
+    "path": "Armature e protezioni > Pettorine",
+    "context": "unknown"
+  },
+  {
+    "id": "183510",
+    "path": "Armature e protezioni > Protezioni anche",
+    "context": "unknown"
+  },
+  {
+    "id": "183505",
+    "path": "Armature e protezioni > Protezioni e supporti caviglie",
+    "context": "unknown"
+  },
+  {
+    "id": "135847",
+    "path": "Carrozzeria e telaio",
+    "context": "unknown"
+  },
+  {
+    "id": "135848",
+    "path": "Carrozzeria e telaio > Altro carrozzeria e telaio",
+    "context": "unknown"
+  },
+  {
+    "id": "65385",
+    "path": "Carrozzeria e telaio > Carene e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "182221",
+    "path": "Carrozzeria e telaio > Cavalletti laterali",
+    "context": "unknown"
+  },
+  {
+    "id": "135859",
+    "path": "Carrozzeria e telaio > Parabrezza",
+    "context": "unknown"
+  },
+  {
+    "id": "182218",
+    "path": "Carrozzeria e telaio > Parafanghi e paraspruzzi",
+    "context": "unknown"
+  },
+  {
+    "id": "182219",
+    "path": "Carrozzeria e telaio > Pedane e morsetti",
+    "context": "unknown"
+  },
+  {
+    "id": "182220",
+    "path": "Carrozzeria e telaio > Portatarga",
+    "context": "unknown"
+  },
+  {
+    "id": "65368",
+    "path": "Carrozzeria e telaio > Telai",
+    "context": "unknown"
+  },
+  {
+    "id": "177075",
+    "path": "Caschi e accessori per il capo",
+    "context": "unknown"
+  },
+  {
+    "id": "177085",
+    "path": "Caschi e accessori per il capo > Altro caschi e accessori",
+    "context": "unknown"
+  },
+  {
+    "id": "177080",
+    "path": "Caschi e accessori per il capo > Bandane, sottocaschi e foulard",
+    "context": "unknown"
+  },
+  {
+    "id": "177076",
+    "path": "Caschi e accessori per il capo > Caschi",
+    "context": "unknown"
+  },
+  {
+    "id": "177084",
+    "path": "Caschi e accessori per il capo > Caschi: ricambi e accessori",
+    "context": "unknown"
+  },
+  {
+    "id": "177083",
+    "path": "Caschi e accessori per il capo > Custodie per caschi e occhiali",
+    "context": "unknown"
+  },
+  {
+    "id": "183514",
+    "path": "Caschi e accessori per il capo > Manutenzione e pulizia casco",
+    "context": "unknown"
+  },
+  {
+    "id": "177082",
+    "path": "Caschi e accessori per il capo > Manutenzione e pulizia casco > Altro manutenzione casco",
+    "context": "unknown"
+  },
+  {
+    "id": "183516",
+    "path": "Caschi e accessori per il capo > Manutenzione e pulizia casco > Detergenti",
+    "context": "unknown"
+  },
+  {
+    "id": "183515",
+    "path": "Caschi e accessori per il capo > Manutenzione e pulizia casco > Kit pulizia",
+    "context": "unknown"
+  },
+  {
+    "id": "183517",
+    "path": "Caschi e accessori per il capo > Manutenzione e pulizia casco > Panni e salviettine",
+    "context": "unknown"
+  },
+  {
+    "id": "177077",
+    "path": "Caschi e accessori per il capo > Occhiali da moto",
+    "context": "unknown"
+  },
+  {
+    "id": "177081",
+    "path": "Caschi e accessori per il capo > Tappi per le orecchie",
+    "context": "unknown"
+  },
+  {
+    "id": "177078",
+    "path": "Caschi e accessori per il capo > Visiere",
+    "context": "unknown"
+  },
+  {
+    "id": "177079",
+    "path": "Caschi e accessori per il capo > Visiere: inserti e pellicole",
+    "context": "unknown"
+  },
+  {
+    "id": "178011",
+    "path": "Cavi strumentazione",
+    "context": "unknown"
+  },
+  {
+    "id": "177933",
+    "path": "Centraline ECU e CDI",
+    "context": "unknown"
+  },
+  {
+    "id": "177951",
+    "path": "Clacson e coperchi",
+    "context": "unknown"
+  },
+  {
+    "id": "177960",
+    "path": "Commutatori",
+    "context": "unknown"
+  },
+  {
+    "id": "177930",
+    "path": "Condensatori",
+    "context": "unknown"
+  },
+  {
+    "id": "178014",
+    "path": "Contachilometri",
+    "context": "unknown"
+  },
+  {
+    "id": "178016",
+    "path": "Contagiri",
+    "context": "unknown"
+  },
+  {
+    "id": "183547",
+    "path": "Contrassegni per la guida",
+    "context": "unknown"
+  },
+  {
+    "id": "177950",
+    "path": "Dinamo e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "177949",
+    "path": "Distributori accensione",
+    "context": "unknown"
+  },
+  {
+    "id": "180513",
+    "path": "Elettronica e navigazione",
+    "context": "unknown"
+  },
+  {
+    "id": "180519",
+    "path": "Elettronica e navigazione > Altoparlanti",
+    "context": "unknown"
+  },
+  {
+    "id": "180521",
+    "path": "Elettronica e navigazione > Altro elettronica, navigazione",
+    "context": "unknown"
+  },
+  {
+    "id": "180514",
+    "path": "Elettronica e navigazione > Amplificatori",
+    "context": "unknown"
+  },
+  {
+    "id": "180517",
+    "path": "Elettronica e navigazione > Auricolari",
+    "context": "unknown"
+  },
+  {
+    "id": "180516",
+    "path": "Elettronica e navigazione > GPS e navigatori",
+    "context": "unknown"
+  },
+  {
+    "id": "180518",
+    "path": "Elettronica e navigazione > Interfoni e radio",
+    "context": "unknown"
+  },
+  {
+    "id": "183524",
+    "path": "Elettronica e navigazione > Prese di bordo e adattatori",
+    "context": "unknown"
+  },
+  {
+    "id": "180520",
+    "path": "Elettronica e navigazione > Ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "180515",
+    "path": "Elettronica e navigazione > Sistema audio",
+    "context": "unknown"
+  },
+  {
+    "id": "183523",
+    "path": "Elettronica e navigazione > Supporti manubrio",
+    "context": "unknown"
+  },
+  {
+    "id": "183546",
+    "path": "Emblemi",
+    "context": "unknown"
+  },
+  {
+    "id": "179522",
+    "path": "Estrattori",
+    "context": "unknown"
+  },
+  {
+    "id": "177932",
+    "path": "Fili e cavi elettrici",
+    "context": "unknown"
+  },
+  {
+    "id": "182255",
+    "path": "Freni e parti",
+    "context": "unknown"
+  },
+  {
+    "id": "65317",
+    "path": "Freni e parti > Altro freni",
+    "context": "unknown"
+  },
+  {
+    "id": "182257",
+    "path": "Freni e parti > Cavi del freno",
+    "context": "unknown"
+  },
+  {
+    "id": "182259",
+    "path": "Freni e parti > Cilindri del freno",
+    "context": "unknown"
+  },
+  {
+    "id": "182256",
+    "path": "Freni e parti > Componenti ABS",
+    "context": "unknown"
+  },
+  {
+    "id": "182260",
+    "path": "Freni e parti > Freni a disco",
+    "context": "unknown"
+  },
+  {
+    "id": "182261",
+    "path": "Freni e parti > Freni a tamburo",
+    "context": "unknown"
+  },
+  {
+    "id": "182264",
+    "path": "Freni e parti > Ganasce freno",
+    "context": "unknown"
+  },
+  {
+    "id": "182265",
+    "path": "Freni e parti > Kit freni completi",
+    "context": "unknown"
+  },
+  {
+    "id": "182263",
+    "path": "Freni e parti > Pastiglie freno",
+    "context": "unknown"
+  },
+  {
+    "id": "182258",
+    "path": "Freni e parti > Pinze freni e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "182262",
+    "path": "Freni e parti > Tubi del freno",
+    "context": "unknown"
+  },
+  {
+    "id": "177931",
+    "path": "Fusibili e scatole fusibili",
+    "context": "unknown"
+  },
+  {
+    "id": "34998",
+    "path": "Garage: utensili e prodotti",
+    "context": "unknown"
+  },
+  {
+    "id": "43986",
+    "path": "Garage: utensili e prodotti > Compressori aria",
+    "context": "unknown"
+  },
+  {
+    "id": "179474",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli",
+    "context": "unknown"
+  },
+  {
+    "id": "179486",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Altro diagnostica per veicoli",
+    "context": "unknown"
+  },
+  {
+    "id": "179483",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Amperometri e analizzatori",
+    "context": "unknown"
+  },
+  {
+    "id": "179479",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Analizzatori gas di scarico",
+    "context": "unknown"
+  },
+  {
+    "id": "179475",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Diagnostica per airbag",
+    "context": "unknown"
+  },
+  {
+    "id": "179476",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Lettori di codici",
+    "context": "unknown"
+  },
+  {
+    "id": "179478",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Pinze e sonde per test",
+    "context": "unknown"
+  },
+  {
+    "id": "179485",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Pistole stroboscopiche",
+    "context": "unknown"
+  },
+  {
+    "id": "184477",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Portatili per diagnostica auto",
+    "context": "unknown"
+  },
+  {
+    "id": "179484",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Software per diagnostica",
+    "context": "unknown"
+  },
+  {
+    "id": "179482",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Telecamere di ispezione",
+    "context": "unknown"
+  },
+  {
+    "id": "179477",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Test aspirazione, compressione",
+    "context": "unknown"
+  },
+  {
+    "id": "179481",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Tester per avviamento",
+    "context": "unknown"
+  },
+  {
+    "id": "179480",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Tester per controllo pressione",
+    "context": "unknown"
+  },
+  {
+    "id": "180040",
+    "path": "Garage: utensili e prodotti > Diagnostica per veicoli > Vernici trasparenti",
+    "context": "unknown"
+  },
+  {
+    "id": "183745",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine",
+    "context": "unknown"
+  },
+  {
+    "id": "63698",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Cabine di verniciatura",
+    "context": "unknown"
+  },
+  {
+    "id": "179506",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Carrelli per sollevamento",
+    "context": "unknown"
+  },
+  {
+    "id": "179511",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Cavalletti",
+    "context": "unknown"
+  },
+  {
+    "id": "63701",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Forniture per officine",
+    "context": "unknown"
+  },
+  {
+    "id": "179519",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Forniture per officine > Altro forniture per officine",
+    "context": "unknown"
+  },
+  {
+    "id": "179517",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Forniture per officine > Canovacci",
+    "context": "unknown"
+  },
+  {
+    "id": "179518",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Forniture per officine > Carta abrasiva",
+    "context": "unknown"
+  },
+  {
+    "id": "82548",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Forniture per officine > Colle",
+    "context": "unknown"
+  },
+  {
+    "id": "82547",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Forniture per officine > Detergenti per mani",
+    "context": "unknown"
+  },
+  {
+    "id": "179516",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Forniture per officine > Stucchi per carrozzerie",
+    "context": "unknown"
+  },
+  {
+    "id": "180039",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Forniture per officine > Teli protezione carrozzeria",
+    "context": "unknown"
+  },
+  {
+    "id": "179505",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Paranchi a leva",
+    "context": "unknown"
+  },
+  {
+    "id": "179510",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Pistole grasso e lubrificanti",
+    "context": "unknown"
+  },
+  {
+    "id": "179508",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Pompe aspiraliquidi",
+    "context": "unknown"
+  },
+  {
+    "id": "136312",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Presse",
+    "context": "unknown"
+  },
+  {
+    "id": "179661",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Rampe",
+    "context": "unknown"
+  },
+  {
+    "id": "179509",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Recuperatori per olio esausto",
+    "context": "unknown"
+  },
+  {
+    "id": "179513",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Sabbiatrici",
+    "context": "unknown"
+  },
+  {
+    "id": "83632",
+    "path": "Garage: utensili e prodotti > Equipaggiamenti per officine > Saldatrici portatili",
+    "context": "unknown"
+  },
+  {
+    "id": "38635",
+    "path": "GPS, audio ed elettronica auto",
+    "context": "unknown"
+  },
+  {
+    "id": "169423",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici",
+    "context": "unknown"
+  },
+  {
+    "id": "38642",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Altro accessori elettrici",
+    "context": "unknown"
+  },
+  {
+    "id": "184977",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Amplificatori: ricambi e accessori",
+    "context": "unknown"
+  },
+  {
+    "id": "184626",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Attrezzi smontaggio autoradio",
+    "context": "unknown"
+  },
+  {
+    "id": "169347",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Cavi e prolunghe",
+    "context": "unknown"
+  },
+  {
+    "id": "169350",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Condensatori di potenza",
+    "context": "unknown"
+  },
+  {
+    "id": "174120",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Cuffie per auto",
+    "context": "unknown"
+  },
+  {
+    "id": "185017",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Head-up display (HUD)",
+    "context": "unknown"
+  },
+  {
+    "id": "169391",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Invertitori e inverter",
+    "context": "unknown"
+  },
+  {
+    "id": "38759",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Kit wireless telefono",
+    "context": "unknown"
+  },
+  {
+    "id": "96371",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Mascherine autoradio",
+    "context": "unknown"
+  },
+  {
+    "id": "184619",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Monitor per retromarcia",
+    "context": "unknown"
+  },
+  {
+    "id": "184978",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Rilevatori autovelox",
+    "context": "unknown"
+  },
+  {
+    "id": "169395",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Schermi",
+    "context": "unknown"
+  },
+  {
+    "id": "185019",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Sintonizzatori TV",
+    "context": "unknown"
+  },
+  {
+    "id": "61012",
+    "path": "GPS, audio ed elettronica auto > Accessori elettronici > Telecomandi auto",
+    "context": "unknown"
+  },
+  {
+    "id": "179672",
+    "path": "GPS, audio ed elettronica auto > Cavi, adattatori e antenne",
+    "context": "unknown"
+  },
+  {
+    "id": "179673",
+    "path": "GPS, audio ed elettronica auto > Cavi, adattatori e antenne > Adattatori",
+    "context": "unknown"
+  },
+  {
+    "id": "179677",
+    "path": "GPS, audio ed elettronica auto > Cavi, adattatori e antenne > Altro cavi e terminali",
+    "context": "unknown"
+  },
+  {
+    "id": "169357",
+    "path": "GPS, audio ed elettronica auto > Cavi, adattatori e antenne > Blocchi di distribuzione",
+    "context": "unknown"
+  },
+  {
+    "id": "174118",
+    "path": "GPS, audio ed elettronica auto > Cavi, adattatori e antenne > Cavi AUX e di interfaccia",
+    "context": "unknown"
+  },
+  {
+    "id": "179675",
+    "path": "GPS, audio ed elettronica auto > Cavi, adattatori e antenne > Cavi e prese",
+    "context": "unknown"
+  },
+  {
+    "id": "174122",
+    "path": "GPS, audio ed elettronica auto > Cavi, adattatori e antenne > Comandi volante",
+    "context": "unknown"
+  },
+  {
+    "id": "179676",
+    "path": "GPS, audio ed elettronica auto > Cavi, adattatori e antenne > Connettori e terminali",
+    "context": "unknown"
+  },
+  {
+    "id": "169358",
+    "path": "GPS, audio ed elettronica auto > Cavi, adattatori e antenne > Fusibili e portafusibili",
+    "context": "unknown"
+  },
+  {
+    "id": "169324",
+    "path": "GPS, audio ed elettronica auto > Cavi, adattatori e antenne > Relè",
+    "context": "unknown"
+  },
+  {
+    "id": "138854",
+    "path": "GPS, audio ed elettronica auto > Componenti altoparlanti",
+    "context": "unknown"
+  },
+  {
+    "id": "38770",
+    "path": "GPS, audio ed elettronica auto > Componenti altoparlanti > Alloggi altoparlanti",
+    "context": "unknown"
+  },
+  {
+    "id": "179670",
+    "path": "GPS, audio ed elettronica auto > Componenti altoparlanti > Altro componenti altoparlanti",
+    "context": "unknown"
+  },
+  {
+    "id": "57290",
+    "path": "GPS, audio ed elettronica auto > Componenti altoparlanti > Anelli adattatori",
+    "context": "unknown"
+  },
+  {
+    "id": "179669",
+    "path": "GPS, audio ed elettronica auto > Componenti altoparlanti > Casse",
+    "context": "unknown"
+  },
+  {
+    "id": "138857",
+    "path": "GPS, audio ed elettronica auto > Componenti altoparlanti > Griglie altoparlanti",
+    "context": "unknown"
+  },
+  {
+    "id": "138856",
+    "path": "GPS, audio ed elettronica auto > Componenti altoparlanti > Materiali fonoassorbenti",
+    "context": "unknown"
+  },
+  {
+    "id": "138855",
+    "path": "GPS, audio ed elettronica auto > Componenti altoparlanti > Moquette acustiche",
+    "context": "unknown"
+  },
+  {
+    "id": "139835",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari",
+    "context": "unknown"
+  },
+  {
+    "id": "169366",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > GPS: accessori",
+    "context": "unknown"
+  },
+  {
+    "id": "169367",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > GPS: accessori > Adattatori e caricabatterie",
+    "context": "unknown"
+  },
+  {
+    "id": "169375",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > GPS: accessori > Altro accessori GPS",
+    "context": "unknown"
+  },
+  {
+    "id": "169368",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > GPS: accessori > Antenne",
+    "context": "unknown"
+  },
+  {
+    "id": "184624",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > GPS: accessori > Batterie di ricambio",
+    "context": "unknown"
+  },
+  {
+    "id": "169370",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > GPS: accessori > Custodie",
+    "context": "unknown"
+  },
+  {
+    "id": "169374",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > GPS: accessori > Protezioni per schermo",
+    "context": "unknown"
+  },
+  {
+    "id": "184625",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > GPS: accessori > Schermi di ricambio",
+    "context": "unknown"
+  },
+  {
+    "id": "60999",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > GPS: accessori > Supporti navigatori",
+    "context": "unknown"
+  },
+  {
+    "id": "184980",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > GPS: software e mappe",
+    "context": "unknown"
+  },
+  {
+    "id": "38776",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > Navigatori fissi",
+    "context": "unknown"
+  },
+  {
+    "id": "184979",
+    "path": "GPS, audio ed elettronica auto > GPS e navigatori satellitari > Navigatori portatili",
+    "context": "unknown"
+  },
+  {
+    "id": "182278",
+    "path": "Impianto elettrico, accensione",
+    "context": "unknown"
+  },
+  {
+    "id": "182279",
+    "path": "Impianto elettrico, accensione > Allarmi",
+    "context": "unknown"
+  },
+  {
+    "id": "182280",
+    "path": "Impianto elettrico, accensione > Alternatori",
+    "context": "unknown"
+  },
+  {
+    "id": "65336",
+    "path": "Impianto elettrico, accensione > Altro impianto elettrico",
+    "context": "unknown"
+  },
+  {
+    "id": "182281",
+    "path": "Impianto elettrico, accensione > Audio",
+    "context": "unknown"
+  },
+  {
+    "id": "135840",
+    "path": "Impianto elettrico, accensione > Batterie",
+    "context": "unknown"
+  },
+  {
+    "id": "182287",
+    "path": "Impianto elettrico, accensione > Bobine d'accensione",
+    "context": "unknown"
+  },
+  {
+    "id": "182293",
+    "path": "Impianto elettrico, accensione > Candele",
+    "context": "unknown"
+  },
+  {
+    "id": "182289",
+    "path": "Impianto elettrico, accensione > Cavi di accensione",
+    "context": "unknown"
+  },
+  {
+    "id": "182296",
+    "path": "Impianto elettrico, accensione > Cavi elettrici",
+    "context": "unknown"
+  },
+  {
+    "id": "182282",
+    "path": "Impianto elettrico, accensione > Centraline ECU e CDI",
+    "context": "unknown"
+  },
+  {
+    "id": "182286",
+    "path": "Impianto elettrico, accensione > Clacson",
+    "context": "unknown"
+  },
+  {
+    "id": "182288",
+    "path": "Impianto elettrico, accensione > Condensatori di accensione",
+    "context": "unknown"
+  },
+  {
+    "id": "182284",
+    "path": "Impianto elettrico, accensione > Dinamo e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "182283",
+    "path": "Impianto elettrico, accensione > Distributori accensione",
+    "context": "unknown"
+  },
+  {
+    "id": "182285",
+    "path": "Impianto elettrico, accensione > Fusibili e scatole fusibili",
+    "context": "unknown"
+  },
+  {
+    "id": "182295",
+    "path": "Impianto elettrico, accensione > Interruttori e relè",
+    "context": "unknown"
+  },
+  {
+    "id": "182291",
+    "path": "Impianto elettrico, accensione > Magneti e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "182294",
+    "path": "Impianto elettrico, accensione > Motorini avviamento",
+    "context": "unknown"
+  },
+  {
+    "id": "182292",
+    "path": "Impianto elettrico, accensione > Regolatori di tensione",
+    "context": "unknown"
+  },
+  {
+    "id": "182290",
+    "path": "Impianto elettrico, accensione > Sensori di accensione",
+    "context": "unknown"
+  },
+  {
+    "id": "178013",
+    "path": "Indicatori del carburante",
+    "context": "unknown"
+  },
+  {
+    "id": "178017",
+    "path": "Indicatori di temperatura",
+    "context": "unknown"
+  },
+  {
+    "id": "178034",
+    "path": "Kit di manutenzione",
+    "context": "unknown"
+  },
+  {
+    "id": "182354",
+    "path": "Kit di manutenzione scooter",
+    "context": "scooter"
+  },
+  {
+    "id": "179463",
+    "path": "Kit riparazione",
+    "context": "unknown"
+  },
+  {
+    "id": "179468",
+    "path": "Kit riparazione > Altro kit riparazione",
+    "context": "unknown"
+  },
+  {
+    "id": "83629",
+    "path": "Kit riparazione > Kit per cambio olio",
+    "context": "unknown"
+  },
+  {
+    "id": "179464",
+    "path": "Kit riparazione > Riparazione ammaccature",
+    "context": "unknown"
+  },
+  {
+    "id": "83623",
+    "path": "Kit riparazione > Riparazione chassis e telaio",
+    "context": "unknown"
+  },
+  {
+    "id": "83624",
+    "path": "Kit riparazione > Riparazione filettatura viti",
+    "context": "unknown"
+  },
+  {
+    "id": "83622",
+    "path": "Kit riparazione > Riparazione freni",
+    "context": "unknown"
+  },
+  {
+    "id": "83626",
+    "path": "Kit riparazione > Riparazione frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "179466",
+    "path": "Kit riparazione > Riparazione gomme",
+    "context": "unknown"
+  },
+  {
+    "id": "179465",
+    "path": "Kit riparazione > Riparazione graffi",
+    "context": "unknown"
+  },
+  {
+    "id": "83628",
+    "path": "Kit riparazione > Riparazione motore",
+    "context": "unknown"
+  },
+  {
+    "id": "179467",
+    "path": "Kit riparazione > Riparazione parabrezza",
+    "context": "unknown"
+  },
+  {
+    "id": "83621",
+    "path": "Kit riparazione > Riparazione sistema di scarico",
+    "context": "unknown"
+  },
+  {
+    "id": "83620",
+    "path": "Kit riparazione > Riparazione trasmissione",
+    "context": "unknown"
+  },
+  {
+    "id": "43995",
+    "path": "Kit utensili a mano",
+    "context": "unknown"
+  },
+  {
+    "id": "180034",
+    "path": "Luci e frecce",
+    "context": "unknown"
+  },
+  {
+    "id": "182333",
+    "path": "Luci e frecce",
+    "context": "unknown"
+  },
+  {
+    "id": "178027",
+    "path": "Luci e frecce > Altro luci e frecce",
+    "context": "unknown"
+  },
+  {
+    "id": "178020",
+    "path": "Luci e frecce > Display",
+    "context": "unknown"
+  },
+  {
+    "id": "182335",
+    "path": "Luci e frecce > Display",
+    "context": "unknown"
+  },
+  {
+    "id": "178026",
+    "path": "Luci e frecce > Fanali posteriori",
+    "context": "unknown"
+  },
+  {
+    "id": "182341",
+    "path": "Luci e frecce > Fanali posteriori",
+    "context": "unknown"
+  },
+  {
+    "id": "178022",
+    "path": "Luci e frecce > Fari anteriori",
+    "context": "unknown"
+  },
+  {
+    "id": "182337",
+    "path": "Luci e frecce > Fari anteriori",
+    "context": "unknown"
+  },
+  {
+    "id": "178021",
+    "path": "Luci e frecce > Fari fendinebbia",
+    "context": "unknown"
+  },
+  {
+    "id": "182336",
+    "path": "Luci e frecce > Fari fendinebbia",
+    "context": "unknown"
+  },
+  {
+    "id": "178023",
+    "path": "Luci e frecce > Frecce",
+    "context": "unknown"
+  },
+  {
+    "id": "182338",
+    "path": "Luci e frecce > Frecce",
+    "context": "unknown"
+  },
+  {
+    "id": "178019",
+    "path": "Luci e frecce > Lampade, LED e HID",
+    "context": "unknown"
+  },
+  {
+    "id": "182334",
+    "path": "Luci e frecce > Lampadine e LED",
+    "context": "unknown"
+  },
+  {
+    "id": "182339",
+    "path": "Luci e frecce > Lenti",
+    "context": "unknown"
+  },
+  {
+    "id": "178024",
+    "path": "Luci e frecce > Lenti per fari",
+    "context": "unknown"
+  },
+  {
+    "id": "178025",
+    "path": "Luci e frecce > Luci targa",
+    "context": "unknown"
+  },
+  {
+    "id": "182340",
+    "path": "Luci e frecce > Luci targa",
+    "context": "unknown"
+  },
+  {
+    "id": "179528",
+    "path": "Madreviti",
+    "context": "unknown"
+  },
+  {
+    "id": "177954",
+    "path": "Magneti",
+    "context": "unknown"
+  },
+  {
+    "id": "178998",
+    "path": "Manubri, manopole e leve",
+    "context": "unknown"
+  },
+  {
+    "id": "182316",
+    "path": "Manubri, manopole e leve",
+    "context": "unknown"
+  },
+  {
+    "id": "65353",
+    "path": "Manubri, manopole e leve > Altro manubri, manopole e leve",
+    "context": "unknown"
+  },
+  {
+    "id": "178009",
+    "path": "Manubri, manopole e leve > Altro manubri, manopole e leve",
+    "context": "unknown"
+  },
+  {
+    "id": "178002",
+    "path": "Manubri, manopole e leve > Contrappesi e bilanciatori",
+    "context": "unknown"
+  },
+  {
+    "id": "182317",
+    "path": "Manubri, manopole e leve > Contrappesi e bilanciatori",
+    "context": "unknown"
+  },
+  {
+    "id": "178005",
+    "path": "Manubri, manopole e leve > Leve del cambio",
+    "context": "unknown"
+  },
+  {
+    "id": "182320",
+    "path": "Manubri, manopole e leve > Leve del cambio",
+    "context": "unknown"
+  },
+  {
+    "id": "178003",
+    "path": "Manubri, manopole e leve > Leve del freno",
+    "context": "unknown"
+  },
+  {
+    "id": "182318",
+    "path": "Manubri, manopole e leve > Leve del freno",
+    "context": "unknown"
+  },
+  {
+    "id": "178004",
+    "path": "Manubri, manopole e leve > Leve della frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "182319",
+    "path": "Manubri, manopole e leve > Leve della frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "178006",
+    "path": "Manubri, manopole e leve > Manopole",
+    "context": "unknown"
+  },
+  {
+    "id": "182321",
+    "path": "Manubri, manopole e leve > Manopole",
+    "context": "unknown"
+  },
+  {
+    "id": "178007",
+    "path": "Manubri, manopole e leve > Manubri",
+    "context": "unknown"
+  },
+  {
+    "id": "182322",
+    "path": "Manubri, manopole e leve > Manubri",
+    "context": "unknown"
+  },
+  {
+    "id": "178008",
+    "path": "Manubri, manopole e leve > Rialzi per manubri",
+    "context": "unknown"
+  },
+  {
+    "id": "182323",
+    "path": "Manubri, manopole e leve > Rialzi per manubri",
+    "context": "unknown"
+  },
+  {
+    "id": "183726",
+    "path": "Manubri, manopole e leve > Rialzi: morsetti e staffe",
+    "context": "unknown"
+  },
+  {
+    "id": "179526",
+    "path": "Martelli scorrevoli",
+    "context": "unknown"
+  },
+  {
+    "id": "179662",
+    "path": "Morsetti",
+    "context": "unknown"
+  },
+  {
+    "id": "25622",
+    "path": "Moto: accessori",
+    "context": "moto"
+  },
+  {
+    "id": "179715",
+    "path": "Moto: accessori > Bagagli per moto",
+    "context": "moto"
+  },
+  {
+    "id": "179721",
+    "path": "Moto: accessori > Bagagli per moto > Altro bagagli per moto",
+    "context": "moto"
+  },
+  {
+    "id": "179719",
+    "path": "Moto: accessori > Bagagli per moto > Bauletti e borse da sella",
+    "context": "moto"
+  },
+  {
+    "id": "183529",
+    "path": "Moto: accessori > Bagagli per moto > Borse da serbatoio",
+    "context": "moto"
+  },
+  {
+    "id": "183528",
+    "path": "Moto: accessori > Bagagli per moto > Borse laterali",
+    "context": "moto"
+  },
+  {
+    "id": "183526",
+    "path": "Moto: accessori > Bagagli per moto > Corde e reti elastiche",
+    "context": "moto"
+  },
+  {
+    "id": "183527",
+    "path": "Moto: accessori > Bagagli per moto > Portapacchi",
+    "context": "moto"
+  },
+  {
+    "id": "179718",
+    "path": "Moto: accessori > Bagagli per moto > Zaini per moto",
+    "context": "moto"
+  },
+  {
+    "id": "62250",
+    "path": "Moto: accessori > Caricabatterie e ottimizzatori",
+    "context": "moto"
+  },
+  {
+    "id": "183544",
+    "path": "Moto: accessori > Decalcomanie,emblemi,bandiere",
+    "context": "moto"
+  },
+  {
+    "id": "183545",
+    "path": "Moto: accessori > Decalcomanie,emblemi,bandiere > Adesivi e decalcomanie",
+    "context": "moto"
+  },
+  {
+    "id": "56420",
+    "path": "Moto: accessori > Decalcomanie,emblemi,bandiere > Bandiere e aste",
+    "context": "moto"
+  },
+  {
+    "id": "21670",
+    "path": "Moto: manuali e istruzioni",
+    "context": "moto"
+  },
+  {
+    "id": "18368",
+    "path": "Moto: manuali e istruzioni > Altro",
+    "context": "moto"
+  },
+  {
+    "id": "126759",
+    "path": "Moto: manuali e istruzioni > Moto d'epoca",
+    "context": "moto"
+  },
+  {
+    "id": "126765",
+    "path": "Moto: manuali e istruzioni > Moto d'epoca > Altro",
+    "context": "moto"
+  },
+  {
+    "id": "126761",
+    "path": "Moto: manuali e istruzioni > Moto d'epoca > Marche americane",
+    "context": "moto"
+  },
+  {
+    "id": "126762",
+    "path": "Moto: manuali e istruzioni > Moto d'epoca > Marche giapponesi",
+    "context": "moto"
+  },
+  {
+    "id": "126764",
+    "path": "Moto: manuali e istruzioni > Moto d'epoca > Marche inglesi",
+    "context": "moto"
+  },
+  {
+    "id": "126760",
+    "path": "Moto: manuali e istruzioni > Moto d'epoca > Marche italiane",
+    "context": "moto"
+  },
+  {
+    "id": "126763",
+    "path": "Moto: manuali e istruzioni > Moto d'epoca > Marche tedesche",
+    "context": "moto"
+  },
+  {
+    "id": "126736",
+    "path": "Moto: manuali e istruzioni > Moto e scooter",
+    "context": "scooter"
+  },
+  {
+    "id": "126745",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Altre marche italiane",
+    "context": "scooter"
+  },
+  {
+    "id": "126750",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Altro",
+    "context": "scooter"
+  },
+  {
+    "id": "126737",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Aprilia",
+    "context": "scooter"
+  },
+  {
+    "id": "126738",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > BMW",
+    "context": "scooter"
+  },
+  {
+    "id": "126739",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Ducati",
+    "context": "scooter"
+  },
+  {
+    "id": "126740",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Harley-Davidson",
+    "context": "scooter"
+  },
+  {
+    "id": "126741",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Honda",
+    "context": "scooter"
+  },
+  {
+    "id": "126747",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Kawasaki",
+    "context": "scooter"
+  },
+  {
+    "id": "126742",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Piaggio",
+    "context": "scooter"
+  },
+  {
+    "id": "126743",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Suzuki",
+    "context": "scooter"
+  },
+  {
+    "id": "34240",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Vespa",
+    "context": "scooter"
+  },
+  {
+    "id": "126744",
+    "path": "Moto: manuali e istruzioni > Moto e scooter > Yamaha",
+    "context": "scooter"
+  },
+  {
+    "id": "138251",
+    "path": "Moto: manuali e istruzioni > Schede e prove moto",
+    "context": "moto"
+  },
+  {
+    "id": "180035",
+    "path": "Moto: pneumatici e cerchi",
+    "context": "moto"
+  },
+  {
+    "id": "182235",
+    "path": "Moto: pneumatici e cerchi > Adesivi per cerchi",
+    "context": "moto"
+  },
+  {
+    "id": "21669",
+    "path": "Moto: pneumatici e cerchi > Altro pneumatici e cerchi",
+    "context": "moto"
+  },
+  {
+    "id": "180036",
+    "path": "Moto: pneumatici e cerchi > Assali,cuscinetti,guarnizioni",
+    "context": "moto"
+  },
+  {
+    "id": "180037",
+    "path": "Moto: pneumatici e cerchi > Assemblaggi mozzi ruota",
+    "context": "moto"
+  },
+  {
+    "id": "147699",
+    "path": "Moto: pneumatici e cerchi > Cerchi",
+    "context": "moto"
+  },
+  {
+    "id": "182236",
+    "path": "Moto: pneumatici e cerchi > Coprivalvole",
+    "context": "moto"
+  },
+  {
+    "id": "124313",
+    "path": "Moto: pneumatici e cerchi > Pneumatici",
+    "context": "moto"
+  },
+  {
+    "id": "88533",
+    "path": "Moto: pneumatici e cerchi > Ruote complete",
+    "context": "moto"
+  },
+  {
+    "id": "10063",
+    "path": "Moto: ricambi",
+    "context": "moto"
+  },
+  {
+    "id": "180028",
+    "path": "Moto: ricambi > Aspirazione e iniezione",
+    "context": "moto"
+  },
+  {
+    "id": "177783",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Altro aspirazione e iniezione",
+    "context": "moto"
+  },
+  {
+    "id": "177773",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Carburatori e ricambi",
+    "context": "moto"
+  },
+  {
+    "id": "177774",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Carenature per filtri aria",
+    "context": "moto"
+  },
+  {
+    "id": "177978",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Cavi acceleratore, carburatore",
+    "context": "moto"
+  },
+  {
+    "id": "180160",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Cavi cruise control",
+    "context": "moto"
+  },
+  {
+    "id": "177775",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Convogliatori aria",
+    "context": "moto"
+  },
+  {
+    "id": "177771",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Filtri aria",
+    "context": "moto"
+  },
+  {
+    "id": "177778",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Filtri carburante",
+    "context": "moto"
+  },
+  {
+    "id": "177776",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Guarnizioni e sigilli",
+    "context": "moto"
+  },
+  {
+    "id": "177779",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Iniettori",
+    "context": "moto"
+  },
+  {
+    "id": "177780",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Pompe carburante",
+    "context": "moto"
+  },
+  {
+    "id": "177781",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Rubinetti serbatoio",
+    "context": "moto"
+  },
+  {
+    "id": "35563",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Serbatoi",
+    "context": "moto"
+  },
+  {
+    "id": "177777",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Tappi serbatoio",
+    "context": "moto"
+  },
+  {
+    "id": "177782",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Tubi per carburante",
+    "context": "moto"
+  },
+  {
+    "id": "177772",
+    "path": "Moto: ricambi > Aspirazione e iniezione > Tubi per l'aria",
+    "context": "moto"
+  },
+  {
+    "id": "35559",
+    "path": "Moto: ricambi > Carrozzeria e telaio",
+    "context": "moto"
+  },
+  {
+    "id": "35568",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Altro carrozzeria e telaio",
+    "context": "moto"
+  },
+  {
+    "id": "179843",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Bulloni e fermi per parafango",
+    "context": "moto"
+  },
+  {
+    "id": "35560",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Carene, code e puntali",
+    "context": "moto"
+  },
+  {
+    "id": "179743",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Cavalletti laterali",
+    "context": "moto"
+  },
+  {
+    "id": "179844",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Eliminatori parafango",
+    "context": "moto"
+  },
+  {
+    "id": "35567",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Parabrezza",
+    "context": "moto"
+  },
+  {
+    "id": "183724",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Parabrezza: attacchi e guarnizioni",
+    "context": "moto"
+  },
+  {
+    "id": "35561",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Parafanghi e paraspruzzi",
+    "context": "moto"
+  },
+  {
+    "id": "183723",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Paramotore, paracoppa",
+    "context": "moto"
+  },
+  {
+    "id": "179747",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Portatarga",
+    "context": "moto"
+  },
+  {
+    "id": "38664",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Set serbatoi e parafanghi",
+    "context": "moto"
+  },
+  {
+    "id": "35562",
+    "path": "Moto: ricambi > Carrozzeria e telaio > Telai",
+    "context": "moto"
+  },
+  {
+    "id": "49790",
+    "path": "Moto: ricambi > Freni e ricambi",
+    "context": "moto"
+  },
+  {
+    "id": "177928",
+    "path": "Moto: ricambi > Freni e ricambi > Altro freni",
+    "context": "moto"
+  },
+  {
+    "id": "177920",
+    "path": "Moto: ricambi > Freni e ricambi > Cavi del freno",
+    "context": "moto"
+  },
+  {
+    "id": "177921",
+    "path": "Moto: ricambi > Freni e ricambi > Cilindri del freno",
+    "context": "moto"
+  },
+  {
+    "id": "177919",
+    "path": "Moto: ricambi > Freni e ricambi > Componenti ABS",
+    "context": "moto"
+  },
+  {
+    "id": "177922",
+    "path": "Moto: ricambi > Freni e ricambi > Freni a disco",
+    "context": "moto"
+  },
+  {
+    "id": "177923",
+    "path": "Moto: ricambi > Freni e ricambi > Freni a tamburo",
+    "context": "moto"
+  },
+  {
+    "id": "177926",
+    "path": "Moto: ricambi > Freni e ricambi > Ganasce freno",
+    "context": "moto"
+  },
+  {
+    "id": "178995",
+    "path": "Moto: ricambi > Freni e ricambi > Kit freni completi",
+    "context": "moto"
+  },
+  {
+    "id": "177925",
+    "path": "Moto: ricambi > Freni e ricambi > Pastiglie freno",
+    "context": "moto"
+  },
+  {
+    "id": "177927",
+    "path": "Moto: ricambi > Freni e ricambi > Pinze freno e ricambi",
+    "context": "moto"
+  },
+  {
+    "id": "177924",
+    "path": "Moto: ricambi > Freni e ricambi > Tubi del freno",
+    "context": "moto"
+  },
+  {
+    "id": "179853",
+    "path": "Moto: ricambi > Impianto elettrico, accensione",
+    "context": "moto"
+  },
+  {
+    "id": "177929",
+    "path": "Moto: ricambi > Impianto elettrico, accensione > Alternatori",
+    "context": "moto"
+  },
+  {
+    "id": "49782",
+    "path": "Moto: ricambi > Impianto elettrico, accensione > Batterie",
+    "context": "moto"
+  },
+  {
+    "id": "177952",
+    "path": "Moto: ricambi > Impianto elettrico, accensione > Bobine d'accensione",
+    "context": "moto"
+  },
+  {
+    "id": "177958",
+    "path": "Moto: ricambi > Impianto elettrico, accensione > Candele",
+    "context": "moto"
+  },
+  {
+    "id": "177953",
+    "path": "Moto: ricambi > Impianto elettrico, accensione > Cavi candele",
+    "context": "moto"
+  },
+  {
+    "id": "96382",
+    "path": "Moto: tuning ed elaborazione",
+    "context": "moto"
+  },
+  {
+    "id": "171107",
+    "path": "Motore e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "177966",
+    "path": "Motore e ricambi > Alberi a camme",
+    "context": "unknown"
+  },
+  {
+    "id": "177967",
+    "path": "Motore e ricambi > Alberi motore e bielle",
+    "context": "unknown"
+  },
+  {
+    "id": "180159",
+    "path": "Motore e ricambi > Big bore",
+    "context": "unknown"
+  },
+  {
+    "id": "180025",
+    "path": "Motore e ricambi > Carter statori",
+    "context": "unknown"
+  },
+  {
+    "id": "177968",
+    "path": "Motore e ricambi > Cilindri",
+    "context": "unknown"
+  },
+  {
+    "id": "177965",
+    "path": "Motore e ricambi > Cinghie e catene",
+    "context": "unknown"
+  },
+  {
+    "id": "177975",
+    "path": "Motore e ricambi > Coppe dell'olio",
+    "context": "unknown"
+  },
+  {
+    "id": "177964",
+    "path": "Motore e ricambi > Cuscinetti",
+    "context": "unknown"
+  },
+  {
+    "id": "177973",
+    "path": "Motore e ricambi > Filtri olio",
+    "context": "unknown"
+  },
+  {
+    "id": "177971",
+    "path": "Motore e ricambi > Guarnizioni motore",
+    "context": "unknown"
+  },
+  {
+    "id": "171108",
+    "path": "Motore e ricambi > Motori completi",
+    "context": "unknown"
+  },
+  {
+    "id": "177977",
+    "path": "Motore e ricambi > Organi di distribuzione",
+    "context": "unknown"
+  },
+  {
+    "id": "177972",
+    "path": "Motore e ricambi > Pedali messa in moto",
+    "context": "unknown"
+  },
+  {
+    "id": "177976",
+    "path": "Motore e ricambi > Pistoni e kit pistoni",
+    "context": "unknown"
+  },
+  {
+    "id": "177974",
+    "path": "Motore e ricambi > Pompe dell'olio",
+    "context": "unknown"
+  },
+  {
+    "id": "65361",
+    "path": "Motori e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "182223",
+    "path": "Motori e ricambi > Alberi a camme",
+    "context": "unknown"
+  },
+  {
+    "id": "182232",
+    "path": "Motori e ricambi > Alberi motore e bielle",
+    "context": "unknown"
+  },
+  {
+    "id": "82226",
+    "path": "Motori e ricambi > Altro motore e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "182222",
+    "path": "Motori e ricambi > Big bore",
+    "context": "unknown"
+  },
+  {
+    "id": "182233",
+    "path": "Motori e ricambi > Cilindri",
+    "context": "unknown"
+  },
+  {
+    "id": "82219",
+    "path": "Motori e ricambi > Cilindri completi",
+    "context": "unknown"
+  },
+  {
+    "id": "182231",
+    "path": "Motori e ricambi > Cinghie e catene",
+    "context": "unknown"
+  },
+  {
+    "id": "182228",
+    "path": "Motori e ricambi > Coppe dell'olio",
+    "context": "unknown"
+  },
+  {
+    "id": "182400",
+    "path": "Motori e ricambi > Cuscinetti",
+    "context": "unknown"
+  },
+  {
+    "id": "182227",
+    "path": "Motori e ricambi > Filtri olio",
+    "context": "unknown"
+  },
+  {
+    "id": "88545",
+    "path": "Motori e ricambi > Guarnizioni motore e sigilli",
+    "context": "unknown"
+  },
+  {
+    "id": "82182",
+    "path": "Motori e ricambi > Motori completi",
+    "context": "unknown"
+  },
+  {
+    "id": "182226",
+    "path": "Motori e ricambi > Pedali messa in moto",
+    "context": "unknown"
+  },
+  {
+    "id": "182230",
+    "path": "Motori e ricambi > Pistoni e kit pistoni",
+    "context": "unknown"
+  },
+  {
+    "id": "182229",
+    "path": "Motori e ricambi > Pompe dell'olio",
+    "context": "unknown"
+  },
+  {
+    "id": "182234",
+    "path": "Motori e ricambi > Prigionieri del cilindro",
+    "context": "unknown"
+  },
+  {
+    "id": "82198",
+    "path": "Motori e ricambi > Sostegni motore",
+    "context": "unknown"
+  },
+  {
+    "id": "82212",
+    "path": "Motori e ricambi > Testate e copritestate",
+    "context": "unknown"
+  },
+  {
+    "id": "182224",
+    "path": "Motori e ricambi > Valvole aspirazione, iniezione",
+    "context": "unknown"
+  },
+  {
+    "id": "182225",
+    "path": "Motori e ricambi > Volano e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "177959",
+    "path": "Motorini e relè d'avviamento",
+    "context": "unknown"
+  },
+  {
+    "id": "179487",
+    "path": "Oli, fluidi e lubrificanti",
+    "context": "unknown"
+  },
+  {
+    "id": "179498",
+    "path": "Oli, fluidi e lubrificanti > Additivi, sigillanti radiatore",
+    "context": "unknown"
+  },
+  {
+    "id": "180156",
+    "path": "Oli, fluidi e lubrificanti > Antighiaccio e decongelanti",
+    "context": "unknown"
+  },
+  {
+    "id": "179491",
+    "path": "Oli, fluidi e lubrificanti > Detergenti per motore",
+    "context": "unknown"
+  },
+  {
+    "id": "179489",
+    "path": "Oli, fluidi e lubrificanti > Fluidi antigelo",
+    "context": "unknown"
+  },
+  {
+    "id": "179499",
+    "path": "Oli, fluidi e lubrificanti > Fluidi avviamento rapido",
+    "context": "unknown"
+  },
+  {
+    "id": "179488",
+    "path": "Oli, fluidi e lubrificanti > Fluidi per aria condizionata",
+    "context": "unknown"
+  },
+  {
+    "id": "179490",
+    "path": "Oli, fluidi e lubrificanti > Fluidi per freni",
+    "context": "unknown"
+  },
+  {
+    "id": "174128",
+    "path": "Oli, fluidi e lubrificanti > Fluidi per frizioni",
+    "context": "unknown"
+  },
+  {
+    "id": "179497",
+    "path": "Oli, fluidi e lubrificanti > Fluidi per servosterzo",
+    "context": "unknown"
+  },
+  {
+    "id": "179502",
+    "path": "Oli, fluidi e lubrificanti > Fluidi per tergicristalli",
+    "context": "unknown"
+  },
+  {
+    "id": "179501",
+    "path": "Oli, fluidi e lubrificanti > Fluidi per trasmissione",
+    "context": "unknown"
+  },
+  {
+    "id": "174135",
+    "path": "Oli, fluidi e lubrificanti > Fluidi sospensioni",
+    "context": "unknown"
+  },
+  {
+    "id": "179495",
+    "path": "Oli, fluidi e lubrificanti > Grasso e lubrificanti",
+    "context": "unknown"
+  },
+  {
+    "id": "174133",
+    "path": "Oli, fluidi e lubrificanti > Lubrificanti spray",
+    "context": "unknown"
+  },
+  {
+    "id": "179496",
+    "path": "Oli, fluidi e lubrificanti > Oli motore",
+    "context": "unknown"
+  },
+  {
+    "id": "179494",
+    "path": "Oli, fluidi e lubrificanti > Oli per cambio e differenziale",
+    "context": "unknown"
+  },
+  {
+    "id": "179500",
+    "path": "Oli, fluidi e lubrificanti > Sigillanti pneumatici",
+    "context": "unknown"
+  },
+  {
+    "id": "179443",
+    "path": "Organizzazione attrezzi",
+    "context": "unknown"
+  },
+  {
+    "id": "179447",
+    "path": "Organizzazione attrezzi > Altro organizzazione attrezzi",
+    "context": "unknown"
+  },
+  {
+    "id": "179444",
+    "path": "Organizzazione attrezzi > Carrelli e cassette portautensili",
+    "context": "unknown"
+  },
+  {
+    "id": "179445",
+    "path": "Organizzazione attrezzi > Cassette attrezzi per camion",
+    "context": "unknown"
+  },
+  {
+    "id": "179446",
+    "path": "Organizzazione attrezzi > Organizzatori per attrezzi",
+    "context": "unknown"
+  },
+  {
+    "id": "178010",
+    "path": "Orologi",
+    "context": "unknown"
+  },
+  {
+    "id": "179752",
+    "path": "Pedane e poggiapiedi",
+    "context": "unknown"
+  },
+  {
+    "id": "177992",
+    "path": "Pedane e poggiapiedi > Altro pedane e poggiapiedi",
+    "context": "unknown"
+  },
+  {
+    "id": "177988",
+    "path": "Pedane e poggiapiedi > Bloccaruote",
+    "context": "unknown"
+  },
+  {
+    "id": "183725",
+    "path": "Pedane e poggiapiedi > Kit pedane",
+    "context": "unknown"
+  },
+  {
+    "id": "177990",
+    "path": "Pedane e poggiapiedi > Poggiapiedi e pedane",
+    "context": "unknown"
+  },
+  {
+    "id": "177991",
+    "path": "Pedane e poggiapiedi > Rearset e pedane arretrate",
+    "context": "unknown"
+  },
+  {
+    "id": "179663",
+    "path": "Pinze",
+    "context": "unknown"
+  },
+  {
+    "id": "177969",
+    "path": "Prigionieri del cilindro",
+    "context": "unknown"
+  },
+  {
+    "id": "183536",
+    "path": "Protezioni antipioggia",
+    "context": "unknown"
+  },
+  {
+    "id": "183539",
+    "path": "Protezioni antipioggia > Altro protezioni antipioggia",
+    "context": "unknown"
+  },
+  {
+    "id": "179730",
+    "path": "Protezioni antipioggia > Coprigambe moto",
+    "context": "unknown"
+  },
+  {
+    "id": "183537",
+    "path": "Protezioni antipioggia > Coprimanopole",
+    "context": "unknown"
+  },
+  {
+    "id": "25642",
+    "path": "Protezioni antipioggia > Coprimoto e teloni",
+    "context": "unknown"
+  },
+  {
+    "id": "183538",
+    "path": "Protezioni antipioggia > Copriselle",
+    "context": "unknown"
+  },
+  {
+    "id": "179735",
+    "path": "Pulizia e protezione",
+    "context": "unknown"
+  },
+  {
+    "id": "179740",
+    "path": "Pulizia e protezione > Altro pulizia e protezione",
+    "context": "unknown"
+  },
+  {
+    "id": "183520",
+    "path": "Pulizia e protezione > Detergenti e sgrassanti",
+    "context": "unknown"
+  },
+  {
+    "id": "179737",
+    "path": "Pulizia e protezione > Kit pulizia",
+    "context": "unknown"
+  },
+  {
+    "id": "179739",
+    "path": "Pulizia e protezione > Paraserbatoi",
+    "context": "unknown"
+  },
+  {
+    "id": "183521",
+    "path": "Pulizia e protezione > Polish",
+    "context": "unknown"
+  },
+  {
+    "id": "183522",
+    "path": "Pulizia e protezione > Spray protettivi",
+    "context": "unknown"
+  },
+  {
+    "id": "179736",
+    "path": "Pulizia e protezione > Spugne, spazzole e panni",
+    "context": "unknown"
+  },
+  {
+    "id": "178012",
+    "path": "Quadri strumenti",
+    "context": "unknown"
+  },
+  {
+    "id": "177962",
+    "path": "Raffreddamento motore",
+    "context": "unknown"
+  },
+  {
+    "id": "182297",
+    "path": "Raffreddamento motore",
+    "context": "unknown"
+  },
+  {
+    "id": "177987",
+    "path": "Raffreddamento motore > Altro raffreddamento motore",
+    "context": "unknown"
+  },
+  {
+    "id": "182306",
+    "path": "Raffreddamento motore > Altro raffreddamento motore",
+    "context": "unknown"
+  },
+  {
+    "id": "177984",
+    "path": "Raffreddamento motore > Coperture per radiatori",
+    "context": "unknown"
+  },
+  {
+    "id": "182303",
+    "path": "Raffreddamento motore > Coperture per radiatori",
+    "context": "unknown"
+  },
+  {
+    "id": "177986",
+    "path": "Raffreddamento motore > Pompe dell'acqua",
+    "context": "unknown"
+  },
+  {
+    "id": "182305",
+    "path": "Raffreddamento motore > Pompe dell'acqua",
+    "context": "unknown"
+  },
+  {
+    "id": "177983",
+    "path": "Raffreddamento motore > Radiatori acqua",
+    "context": "unknown"
+  },
+  {
+    "id": "182301",
+    "path": "Raffreddamento motore > Radiatori acqua",
+    "context": "unknown"
+  },
+  {
+    "id": "177981",
+    "path": "Raffreddamento motore > Radiatori olio",
+    "context": "unknown"
+  },
+  {
+    "id": "182300",
+    "path": "Raffreddamento motore > Sistema raffreddamento, filtri",
+    "context": "unknown"
+  },
+  {
+    "id": "180026",
+    "path": "Raffreddamento motore > Tappi radiatori",
+    "context": "unknown"
+  },
+  {
+    "id": "182302",
+    "path": "Raffreddamento motore > Tappi radiatori",
+    "context": "unknown"
+  },
+  {
+    "id": "182304",
+    "path": "Raffreddamento motore > Termostati",
+    "context": "unknown"
+  },
+  {
+    "id": "177985",
+    "path": "Raffreddamento motore > Termostati e alloggiamenti",
+    "context": "unknown"
+  },
+  {
+    "id": "177982",
+    "path": "Raffreddamento motore > Tubi raffreddamento",
+    "context": "unknown"
+  },
+  {
+    "id": "182298",
+    "path": "Raffreddamento motore > Tubi refrigerante e flessibili",
+    "context": "unknown"
+  },
+  {
+    "id": "182299",
+    "path": "Raffreddamento motore > Ventole di raffreddamento",
+    "context": "unknown"
+  },
+  {
+    "id": "177963",
+    "path": "Raffreddamento motore > Ventole e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "183530",
+    "path": "Rampe e rimorchi",
+    "context": "unknown"
+  },
+  {
+    "id": "179722",
+    "path": "Rampe e rimorchi > Altro rampe e rimorchi",
+    "context": "unknown"
+  },
+  {
+    "id": "183533",
+    "path": "Rampe e rimorchi > Cinghie di fissaggio",
+    "context": "unknown"
+  },
+  {
+    "id": "183534",
+    "path": "Rampe e rimorchi > Cinghie di tensionamento",
+    "context": "unknown"
+  },
+  {
+    "id": "183535",
+    "path": "Rampe e rimorchi > Cunei",
+    "context": "unknown"
+  },
+  {
+    "id": "184478",
+    "path": "Rampe e rimorchi > Portamoto",
+    "context": "unknown"
+  },
+  {
+    "id": "183532",
+    "path": "Rampe e rimorchi > Rampe e binari",
+    "context": "unknown"
+  },
+  {
+    "id": "183531",
+    "path": "Rampe e rimorchi > Rimorchi da moto",
+    "context": "unknown"
+  },
+  {
+    "id": "177955",
+    "path": "Regolatori di tensione",
+    "context": "unknown"
+  },
+  {
+    "id": "177956",
+    "path": "Relè",
+    "context": "unknown"
+  },
+  {
+    "id": "179529",
+    "path": "Ricambi per utensili a mano",
+    "context": "unknown"
+  },
+  {
+    "id": "179524",
+    "path": "Rivettatrici",
+    "context": "unknown"
+  },
+  {
+    "id": "182363",
+    "path": "Ruote e pneumatici",
+    "context": "unknown"
+  },
+  {
+    "id": "182369",
+    "path": "Ruote e pneumatici > Altro ruote e pneumatici",
+    "context": "unknown"
+  },
+  {
+    "id": "182367",
+    "path": "Ruote e pneumatici > Cerchioni e decalcomanie",
+    "context": "unknown"
+  },
+  {
+    "id": "182364",
+    "path": "Ruote e pneumatici > Pneumatici e camere d'aria",
+    "context": "unknown"
+  },
+  {
+    "id": "182366",
+    "path": "Ruote e pneumatici > Ruote",
+    "context": "unknown"
+  },
+  {
+    "id": "182368",
+    "path": "Ruote e pneumatici > Ruote complete",
+    "context": "unknown"
+  },
+  {
+    "id": "182365",
+    "path": "Ruote e pneumatici > Valvole e coprivalvole",
+    "context": "unknown"
+  },
+  {
+    "id": "151584",
+    "path": "Schede e prove auto",
+    "context": "unknown"
+  },
+  {
+    "id": "84149",
+    "path": "Scooter: ricambi e accessori",
+    "context": "scooter"
+  },
+  {
+    "id": "82321",
+    "path": "Scooter: ricambi e accessori > Accessori",
+    "context": "scooter"
+  },
+  {
+    "id": "182240",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione",
+    "context": "scooter"
+  },
+  {
+    "id": "182254",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Altro aspirazione e iniezione",
+    "context": "scooter"
+  },
+  {
+    "id": "82205",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Carburatori",
+    "context": "scooter"
+  },
+  {
+    "id": "182251",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Carenature per filtri aria",
+    "context": "scooter"
+  },
+  {
+    "id": "182253",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Cavi acceleratore, carburatore",
+    "context": "scooter"
+  },
+  {
+    "id": "182250",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Cavi cruise control",
+    "context": "scooter"
+  },
+  {
+    "id": "182252",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Convogliatori aria",
+    "context": "scooter"
+  },
+  {
+    "id": "182241",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Filtri aria",
+    "context": "scooter"
+  },
+  {
+    "id": "182244",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Filtri carburante",
+    "context": "scooter"
+  },
+  {
+    "id": "182249",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Guarnizioni",
+    "context": "scooter"
+  },
+  {
+    "id": "182245",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Iniettori",
+    "context": "scooter"
+  },
+  {
+    "id": "182248",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Pompe carburante",
+    "context": "scooter"
+  },
+  {
+    "id": "182246",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Rubinetti serbatoio",
+    "context": "scooter"
+  },
+  {
+    "id": "65380",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Serbatoi",
+    "context": "scooter"
+  },
+  {
+    "id": "182243",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Tappi serbatoio",
+    "context": "scooter"
+  },
+  {
+    "id": "182247",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Tubi per carburante",
+    "context": "scooter"
+  },
+  {
+    "id": "182242",
+    "path": "Scooter: ricambi e accessori > Aspirazione e iniezione > Tubi per l'aria",
+    "context": "scooter"
+  },
+  {
+    "id": "182342",
+    "path": "Scooter: ricambi e accessori > Borse e portapacchi",
+    "context": "scooter"
+  },
+  {
+    "id": "182347",
+    "path": "Scooter: ricambi e accessori > Borse e portapacchi > Altro borse e portapacchi",
+    "context": "scooter"
+  },
+  {
+    "id": "182346",
+    "path": "Scooter: ricambi e accessori > Borse e portapacchi > Bauli",
+    "context": "scooter"
+  },
+  {
+    "id": "182344",
+    "path": "Scooter: ricambi e accessori > Borse e portapacchi > Bisacce",
+    "context": "scooter"
+  },
+  {
+    "id": "182345",
+    "path": "Scooter: ricambi e accessori > Borse e portapacchi > Borse da serbatoio",
+    "context": "scooter"
+  },
+  {
+    "id": "182343",
+    "path": "Scooter: ricambi e accessori > Borse e portapacchi > Portapacchi",
+    "context": "scooter"
+  },
+  {
+    "id": "179512",
+    "path": "Sdraio, seggiole sottomacchina",
+    "context": "unknown"
+  },
+  {
+    "id": "182353",
+    "path": "Selle",
+    "context": "unknown"
+  },
+  {
+    "id": "182348",
+    "path": "Selle e schienali",
+    "context": "unknown"
+  },
+  {
+    "id": "182352",
+    "path": "Selle e schienali > Carenature per selle",
+    "context": "unknown"
+  },
+  {
+    "id": "182349",
+    "path": "Selle e schienali > Schienali",
+    "context": "unknown"
+  },
+  {
+    "id": "182350",
+    "path": "Selle passeggero",
+    "context": "unknown"
+  },
+  {
+    "id": "178030",
+    "path": "Selle, schienali e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "178033",
+    "path": "Selle, schienali e ricambi > Altro selle, schienali e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "178032",
+    "path": "Selle, schienali e ricambi > Carenature per selle",
+    "context": "unknown"
+  },
+  {
+    "id": "183728",
+    "path": "Selle, schienali e ricambi > Copriselle",
+    "context": "unknown"
+  },
+  {
+    "id": "178031",
+    "path": "Selle, schienali e ricambi > Schienali e schienalini",
+    "context": "unknown"
+  },
+  {
+    "id": "183727",
+    "path": "Selle, schienali e ricambi > Selle",
+    "context": "unknown"
+  },
+  {
+    "id": "182351",
+    "path": "Selle: copriselle",
+    "context": "unknown"
+  },
+  {
+    "id": "177957",
+    "path": "Sensori",
+    "context": "unknown"
+  },
+  {
+    "id": "180024",
+    "path": "Serbatoi olio",
+    "context": "unknown"
+  },
+  {
+    "id": "182307",
+    "path": "Sistema di scarico",
+    "context": "unknown"
+  },
+  {
+    "id": "65309",
+    "path": "Sistema di scarico > Altro sistemi di scarico",
+    "context": "unknown"
+  },
+  {
+    "id": "182313",
+    "path": "Sistema di scarico > Collettori e perni",
+    "context": "unknown"
+  },
+  {
+    "id": "182311",
+    "path": "Sistema di scarico > Dissipatore calore di scarico",
+    "context": "unknown"
+  },
+  {
+    "id": "182308",
+    "path": "Sistema di scarico > Flange e morsetti",
+    "context": "unknown"
+  },
+  {
+    "id": "182310",
+    "path": "Sistema di scarico > Guarnizioni scarico e sigilli",
+    "context": "unknown"
+  },
+  {
+    "id": "182314",
+    "path": "Sistema di scarico > Marmitte",
+    "context": "unknown"
+  },
+  {
+    "id": "182315",
+    "path": "Sistema di scarico > Sensori di ossigeno",
+    "context": "unknown"
+  },
+  {
+    "id": "182309",
+    "path": "Sistema di scarico > Sistemi completi di scarico",
+    "context": "unknown"
+  },
+  {
+    "id": "182312",
+    "path": "Sistema di scarico > Tubi di scarico",
+    "context": "unknown"
+  },
+  {
+    "id": "180027",
+    "path": "Sistemi di scarico",
+    "context": "unknown"
+  },
+  {
+    "id": "178001",
+    "path": "Sistemi di scarico > Altro sistemi di scarico",
+    "context": "unknown"
+  },
+  {
+    "id": "177997",
+    "path": "Sistemi di scarico > Collettori",
+    "context": "unknown"
+  },
+  {
+    "id": "177993",
+    "path": "Sistemi di scarico > Guarnizioni",
+    "context": "unknown"
+  },
+  {
+    "id": "177995",
+    "path": "Sistemi di scarico > Morsetti, flange e ganci",
+    "context": "unknown"
+  },
+  {
+    "id": "177994",
+    "path": "Sistemi di scarico > Paracalore",
+    "context": "unknown"
+  },
+  {
+    "id": "177996",
+    "path": "Sistemi di scarico > Scarichi completi",
+    "context": "unknown"
+  },
+  {
+    "id": "177998",
+    "path": "Sistemi di scarico > Sonde lambda e sensori",
+    "context": "unknown"
+  },
+  {
+    "id": "178000",
+    "path": "Sistemi di scarico > Terminali di scarico",
+    "context": "unknown"
+  },
+  {
+    "id": "177999",
+    "path": "Sistemi di scarico > Tubi",
+    "context": "unknown"
+  },
+  {
+    "id": "179723",
+    "path": "Sistemi sicurezza",
+    "context": "unknown"
+  },
+  {
+    "id": "179724",
+    "path": "Sistemi sicurezza > Allarmi antifurto",
+    "context": "unknown"
+  },
+  {
+    "id": "179728",
+    "path": "Sistemi sicurezza > Altro antifurti e catene",
+    "context": "unknown"
+  },
+  {
+    "id": "179725",
+    "path": "Sistemi sicurezza > Ancoraggi terra e muro",
+    "context": "unknown"
+  },
+  {
+    "id": "183540",
+    "path": "Sistemi sicurezza > Blocca freni",
+    "context": "unknown"
+  },
+  {
+    "id": "179727",
+    "path": "Sistemi sicurezza > Bloccadischi",
+    "context": "unknown"
+  },
+  {
+    "id": "179726",
+    "path": "Sistemi sicurezza > Catene, cavi e lucchetti a U",
+    "context": "unknown"
+  },
+  {
+    "id": "183543",
+    "path": "Sistemi sicurezza > Cavi di sicurezza",
+    "context": "unknown"
+  },
+  {
+    "id": "183542",
+    "path": "Sistemi sicurezza > Lucchetti",
+    "context": "unknown"
+  },
+  {
+    "id": "183541",
+    "path": "Sistemi sicurezza > Lucchetti per caschi",
+    "context": "unknown"
+  },
+  {
+    "id": "63699",
+    "path": "Smontagomme ed equilibratrici",
+    "context": "unknown"
+  },
+  {
+    "id": "63696",
+    "path": "Sollevatori",
+    "context": "unknown"
+  },
+  {
+    "id": "179731",
+    "path": "Sollevatori e cavalletti",
+    "context": "unknown"
+  },
+  {
+    "id": "179734",
+    "path": "Sollevatori e cavalletti > Altro sollevatori e cavalletti",
+    "context": "unknown"
+  },
+  {
+    "id": "183525",
+    "path": "Sollevatori e cavalletti > Carrelli spostamoto",
+    "context": "unknown"
+  },
+  {
+    "id": "179732",
+    "path": "Sollevatori e cavalletti > Cavalletti alzaruota",
+    "context": "unknown"
+  },
+  {
+    "id": "179733",
+    "path": "Sollevatori e cavalletti > Sollevatori e pedane",
+    "context": "unknown"
+  },
+  {
+    "id": "178996",
+    "path": "Sospensioni",
+    "context": "unknown"
+  },
+  {
+    "id": "182355",
+    "path": "Sospensioni",
+    "context": "unknown"
+  },
+  {
+    "id": "65329",
+    "path": "Sospensioni > Altro sospensioni",
+    "context": "unknown"
+  },
+  {
+    "id": "179741",
+    "path": "Sospensioni > Altro sospensioni",
+    "context": "unknown"
+  },
+  {
+    "id": "178042",
+    "path": "Sospensioni > Ammortizzatori",
+    "context": "unknown"
+  },
+  {
+    "id": "182362",
+    "path": "Sospensioni > Ammortizzatori",
+    "context": "unknown"
+  },
+  {
+    "id": "183730",
+    "path": "Sospensioni > Ammortizzatori di sterzo",
+    "context": "unknown"
+  },
+  {
+    "id": "178040",
+    "path": "Sospensioni > Canotti e sostegni forcelle",
+    "context": "unknown"
+  },
+  {
+    "id": "182360",
+    "path": "Sospensioni > Canotti e sostegni forcelle",
+    "context": "unknown"
+  },
+  {
+    "id": "178037",
+    "path": "Sospensioni > Cuscinetti e boccole",
+    "context": "unknown"
+  },
+  {
+    "id": "182357",
+    "path": "Sospensioni > Cuscinetti e boccole",
+    "context": "unknown"
+  },
+  {
+    "id": "178038",
+    "path": "Sospensioni > Forcelle complete",
+    "context": "unknown"
+  },
+  {
+    "id": "178039",
+    "path": "Sospensioni > Guarnizioni per forcelle",
+    "context": "unknown"
+  },
+  {
+    "id": "182359",
+    "path": "Sospensioni > Guarnizioni per forcelle",
+    "context": "unknown"
+  },
+  {
+    "id": "183729",
+    "path": "Sospensioni > Kit assetto ribassato",
+    "context": "unknown"
+  },
+  {
+    "id": "178041",
+    "path": "Sospensioni > Piastre per forcelle",
+    "context": "unknown"
+  },
+  {
+    "id": "182361",
+    "path": "Sospensioni > Piastre per forcelle",
+    "context": "unknown"
+  },
+  {
+    "id": "178036",
+    "path": "Sospensioni > Snodi a sfera",
+    "context": "unknown"
+  },
+  {
+    "id": "182356",
+    "path": "Sospensioni > Snodi sferici",
+    "context": "unknown"
+  },
+  {
+    "id": "182358",
+    "path": "Sospensioni > Sospensioni complete",
+    "context": "unknown"
+  },
+  {
+    "id": "179507",
+    "path": "Sostegni e sollevamento motori",
+    "context": "unknown"
+  },
+  {
+    "id": "135849",
+    "path": "Specchietti",
+    "context": "unknown"
+  },
+  {
+    "id": "49899",
+    "path": "Specchietti retrovisori",
+    "context": "unknown"
+  },
+  {
+    "id": "177102",
+    "path": "Stivali",
+    "context": "unknown"
+  },
+  {
+    "id": "180033",
+    "path": "Strumentazione e indicatori",
+    "context": "unknown"
+  },
+  {
+    "id": "182324",
+    "path": "Strumentazione e indicatori",
+    "context": "unknown"
+  },
+  {
+    "id": "65344",
+    "path": "Strumentazione e indicatori > Altro strumentazione",
+    "context": "unknown"
+  },
+  {
+    "id": "182327",
+    "path": "Strumentazione e indicatori > Cavi strumentazione",
+    "context": "unknown"
+  },
+  {
+    "id": "182329",
+    "path": "Strumentazione e indicatori > Contachilometri",
+    "context": "unknown"
+  },
+  {
+    "id": "182331",
+    "path": "Strumentazione e indicatori > Contagiri",
+    "context": "unknown"
+  },
+  {
+    "id": "182326",
+    "path": "Strumentazione e indicatori > Indicatori di carburante",
+    "context": "unknown"
+  },
+  {
+    "id": "182332",
+    "path": "Strumentazione e indicatori > Indicatori di temperatura",
+    "context": "unknown"
+  },
+  {
+    "id": "182325",
+    "path": "Strumentazione e indicatori > Orologi",
+    "context": "unknown"
+  },
+  {
+    "id": "182328",
+    "path": "Strumentazione e indicatori > Strumentazioni complete",
+    "context": "unknown"
+  },
+  {
+    "id": "182330",
+    "path": "Strumentazione e indicatori > Tachimetri",
+    "context": "unknown"
+  },
+  {
+    "id": "179515",
+    "path": "Strumenti allineamento ruote",
+    "context": "unknown"
+  },
+  {
+    "id": "179521",
+    "path": "Strumenti da taglio",
+    "context": "unknown"
+  },
+  {
+    "id": "43991",
+    "path": "Strumenti misurazione, precisione",
+    "context": "unknown"
+  },
+  {
+    "id": "178015",
+    "path": "Tachimetri",
+    "context": "unknown"
+  },
+  {
+    "id": "179514",
+    "path": "Tendimolle per ammortizzatori",
+    "context": "unknown"
+  },
+  {
+    "id": "177970",
+    "path": "Testate e copritestate",
+    "context": "unknown"
+  },
+  {
+    "id": "179469",
+    "path": "Tester, caricatori per batterie",
+    "context": "unknown"
+  },
+  {
+    "id": "179473",
+    "path": "Tester, caricatori per batterie > Altro test, caricatori batterie",
+    "context": "unknown"
+  },
+  {
+    "id": "179471",
+    "path": "Tester, caricatori per batterie > Caricabatterie e avviatori",
+    "context": "unknown"
+  },
+  {
+    "id": "179472",
+    "path": "Tester, caricatori per batterie > Cavi d'avviamento",
+    "context": "unknown"
+  },
+  {
+    "id": "179470",
+    "path": "Tester, caricatori per batterie > Tester per batterie",
+    "context": "unknown"
+  },
+  {
+    "id": "63695",
+    "path": "Torni per freni",
+    "context": "unknown"
+  },
+  {
+    "id": "180029",
+    "path": "Trasmissione e frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "182266",
+    "path": "Trasmissione e frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "177942",
+    "path": "Trasmissione e frizione > Alberi di trasmissione",
+    "context": "unknown"
+  },
+  {
+    "id": "82191",
+    "path": "Trasmissione e frizione > Altro trasmissione e frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "177947",
+    "path": "Trasmissione e frizione > Altro trasmissione e frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "177948",
+    "path": "Trasmissione e frizione > Carter frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "182271",
+    "path": "Trasmissione e frizione > Carter frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "49831",
+    "path": "Trasmissione e frizione > Catene e pignoni",
+    "context": "unknown"
+  },
+  {
+    "id": "182269",
+    "path": "Trasmissione e frizione > Catene e pignoni",
+    "context": "unknown"
+  },
+  {
+    "id": "177936",
+    "path": "Trasmissione e frizione > Cavi frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "182270",
+    "path": "Trasmissione e frizione > Cavi frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "182274",
+    "path": "Trasmissione e frizione > Cilindretti frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "177937",
+    "path": "Trasmissione e frizione > Cilindri maestro frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "182272",
+    "path": "Trasmissione e frizione > Cilindri maestro frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "177938",
+    "path": "Trasmissione e frizione > Cilindri secondari frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "182277",
+    "path": "Trasmissione e frizione > Cinghie e tendicinghia",
+    "context": "unknown"
+  },
+  {
+    "id": "180031",
+    "path": "Trasmissione e frizione > Cinghie trasmissione e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "180032",
+    "path": "Trasmissione e frizione > Cinghie trasmissione primarie",
+    "context": "unknown"
+  },
+  {
+    "id": "177934",
+    "path": "Trasmissione e frizione > Cuscinetti",
+    "context": "unknown"
+  },
+  {
+    "id": "182267",
+    "path": "Trasmissione e frizione > Cuscinetti",
+    "context": "unknown"
+  },
+  {
+    "id": "177941",
+    "path": "Trasmissione e frizione > Differenziali e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "177939",
+    "path": "Trasmissione e frizione > Dischi frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "182273",
+    "path": "Trasmissione e frizione > Dischi frizione",
+    "context": "unknown"
+  },
+  {
+    "id": "177944",
+    "path": "Trasmissione e frizione > Frizioni e ricambi",
+    "context": "unknown"
+  },
+  {
+    "id": "180030",
+    "path": "Trasmissione e frizione > Frizioni: altre parti",
+    "context": "unknown"
+  },
+  {
+    "id": "177946",
+    "path": "Trasmissione e frizione > Giunture e guarnizioni",
+    "context": "unknown"
+  },
+  {
+    "id": "177940",
+    "path": "Trasmissione e frizione > Kit frizioni complete",
+    "context": "unknown"
+  },
+  {
+    "id": "182275",
+    "path": "Trasmissione e frizione > Kit frizioni complete",
+    "context": "unknown"
+  },
+  {
+    "id": "177935",
+    "path": "Trasmissione e frizione > Paracatene",
+    "context": "unknown"
+  },
+  {
+    "id": "182268",
+    "path": "Trasmissione e frizione > Paracatene",
+    "context": "unknown"
+  },
+  {
+    "id": "177945",
+    "path": "Trasmissione e frizione > Pulegge e tendicinghie",
+    "context": "unknown"
+  },
+  {
+    "id": "82183",
+    "path": "Trasmissione e frizione > Scatole del cambio",
+    "context": "unknown"
+  },
+  {
+    "id": "182276",
+    "path": "Trasmissione e frizione > Semiassi",
+    "context": "unknown"
+  },
+  {
+    "id": "179492",
+    "path": "Trattamento carburante",
+    "context": "unknown"
+  },
+  {
+    "id": "179493",
+    "path": "Trattamento guarnizioni",
+    "context": "unknown"
+  },
+  {
+    "id": "177106",
+    "path": "Tute in pelle e altri tessuti",
+    "context": "unknown"
+  },
+  {
+    "id": "43985",
+    "path": "Utensili ad aria compressa",
+    "context": "unknown"
+  },
+  {
+    "id": "34999",
+    "path": "Utensili ad aria compressa > Altro utensili aria compressa",
+    "context": "unknown"
+  },
+  {
+    "id": "179417",
+    "path": "Utensili ad aria compressa > Avvitatori a cricchetto",
+    "context": "unknown"
+  },
+  {
+    "id": "179419",
+    "path": "Utensili ad aria compressa > Avvitatori ad aria compressa",
+    "context": "unknown"
+  },
+  {
+    "id": "179418",
+    "path": "Utensili ad aria compressa > Levigatrici pneumatiche",
+    "context": "unknown"
+  },
+  {
+    "id": "43987",
+    "path": "Utensili ad aria compressa > Pistole a spruzzo",
+    "context": "unknown"
+  },
+  {
+    "id": "179415",
+    "path": "Utensili ad aria compressa > Punzonatrici e profilatrici",
+    "context": "unknown"
+  },
+  {
+    "id": "179420",
+    "path": "Utensili ad aria compressa > Ricambi per utensili ad aria",
+    "context": "unknown"
+  },
+  {
+    "id": "179416",
+    "path": "Utensili ad aria compressa > Smerigliatrici pneumatiche",
+    "context": "unknown"
+  },
+  {
+    "id": "179414",
+    "path": "Utensili ad aria compressa > Trapani pneumatici",
+    "context": "unknown"
+  },
+  {
+    "id": "108798",
+    "path": "Utensili aria condizionata",
+    "context": "unknown"
+  },
+  {
+    "id": "179520",
+    "path": "Utensili batti e piegalamiera",
+    "context": "unknown"
+  },
+  {
+    "id": "25644",
+    "path": "Utensili e kit di bordo",
+    "context": "unknown"
+  },
+  {
+    "id": "35000",
+    "path": "Utensili elettrici",
+    "context": "unknown"
+  },
+  {
+    "id": "43990",
+    "path": "Utensili manuali",
+    "context": "unknown"
+  },
+  {
+    "id": "179527",
+    "path": "Utensili manuali > Bussole: singole e set",
+    "context": "unknown"
+  },
+  {
+    "id": "179525",
+    "path": "Utensili manuali > Cacciaviti",
+    "context": "unknown"
+  },
+  {
+    "id": "82537",
+    "path": "Utensili manuali > Cartellatrici",
+    "context": "unknown"
+  },
+  {
+    "id": "179523",
+    "path": "Utensili manuali > Chiavi a bussola",
+    "context": "unknown"
+  },
+  {
+    "id": "43994",
+    "path": "Utensili manuali > Chiavi inglesi",
+    "context": "unknown"
+  },
+  {
+    "id": "179504",
+    "path": "Utensili per freni",
+    "context": "unknown"
+  },
+  {
+    "id": "177979",
+    "path": "Valvole",
+    "context": "unknown"
+  },
+  {
+    "id": "179421",
+    "path": "Verniciatura veicoli",
+    "context": "unknown"
+  },
+  {
+    "id": "179423",
+    "path": "Verniciatura veicoli > Additivi",
+    "context": "unknown"
+  },
+  {
+    "id": "179427",
+    "path": "Verniciatura veicoli > Additivi > Altro additivi per vernice",
+    "context": "unknown"
+  },
+  {
+    "id": "179425",
+    "path": "Verniciatura veicoli > Additivi > Catalizzatori vernice",
+    "context": "unknown"
+  },
+  {
+    "id": "179426",
+    "path": "Verniciatura veicoli > Additivi > Diluenti e lacche",
+    "context": "unknown"
+  },
+  {
+    "id": "179424",
+    "path": "Verniciatura veicoli > Additivi > Vernici perlate e metal flake",
+    "context": "unknown"
+  },
+  {
+    "id": "179441",
+    "path": "Verniciatura veicoli > Altro verniciatura veicoli",
+    "context": "unknown"
+  },
+  {
+    "id": "179429",
+    "path": "Verniciatura veicoli > Attrezzi per verniciatura",
+    "context": "unknown"
+  },
+  {
+    "id": "180038",
+    "path": "Verniciatura veicoli > Connettori, adattatori per test",
+    "context": "unknown"
+  },
+  {
+    "id": "179430",
+    "path": "Verniciatura veicoli > Fondi e primer per carrozzeria",
+    "context": "unknown"
+  },
+  {
+    "id": "179428",
+    "path": "Verniciatura veicoli > Kit verniciatura auto",
+    "context": "unknown"
+  },
+  {
+    "id": "179422",
+    "path": "Verniciatura veicoli > Nastri adesivi verniciatura",
+    "context": "unknown"
+  },
+  {
+    "id": "179432",
+    "path": "Verniciatura veicoli > Vernici monostrato",
+    "context": "unknown"
+  },
+  {
+    "id": "179431",
+    "path": "Verniciatura veicoli > Vernici multistrato",
+    "context": "unknown"
+  },
+  {
+    "id": "179433",
+    "path": "Verniciatura veicoli > Vernici speciali per veicoli",
+    "context": "unknown"
+  },
+  {
+    "id": "179439",
+    "path": "Verniciatura veicoli > Vernici speciali per veicoli > Altro vernici speciali",
+    "context": "unknown"
+  },
+  {
+    "id": "179437",
+    "path": "Verniciatura veicoli > Vernici speciali per veicoli > Prodotti antiruggine",
+    "context": "unknown"
+  },
+  {
+    "id": "179434",
+    "path": "Verniciatura veicoli > Vernici speciali per veicoli > Vernici cangianti",
+    "context": "unknown"
+  },
+  {
+    "id": "179435",
+    "path": "Verniciatura veicoli > Vernici speciali per veicoli > Vernici termoresistenti",
+    "context": "unknown"
+  },
+  {
+    "id": "179440",
+    "path": "Verniciatura veicoli > Vernici spray e a pennarello",
+    "context": "unknown"
+  },
+  {
+    "id": "177943",
+    "path": "Volano e ricambi",
+    "context": "unknown"
+  }
+]

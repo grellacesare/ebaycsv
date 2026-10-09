@@ -1,0 +1,149 @@
+[
+  {
+    "id": "1000",
+    "name": "Accessori Moto",
+    "description": "",
+    "position": 0,
+    "shown": true
+  },
+  {
+    "id": "1009",
+    "name": "Alimentazione",
+    "description": "",
+    "position": 1,
+    "shown": true
+  },
+  {
+    "id": "1024",
+    "name": "Aspirazione",
+    "description": "",
+    "position": 2,
+    "shown": true
+  },
+  {
+    "id": "1029",
+    "name": "Batterie",
+    "description": "",
+    "position": 3,
+    "shown": true
+  },
+  {
+    "id": "1037",
+    "name": "Carrozzeria",
+    "description": "",
+    "position": 4,
+    "shown": true
+  },
+  {
+    "id": "1055",
+    "name": "Cuscinetti",
+    "description": "",
+    "position": 5,
+    "shown": true
+  },
+  {
+    "id": "1063",
+    "name": "Gadget e Merchandising",
+    "description": "",
+    "position": 6,
+    "shown": false
+  },
+  {
+    "id": "1069",
+    "name": "Gomme",
+    "description": "",
+    "position": 7,
+    "shown": true
+  },
+  {
+    "id": "1074",
+    "name": "Impianto Elettrico",
+    "description": "",
+    "position": 8,
+    "shown": true
+  },
+  {
+    "id": "1116",
+    "name": "Impianto Frenante",
+    "description": "",
+    "position": 9,
+    "shown": true
+  },
+  {
+    "id": "1130",
+    "name": "Kit Tagliando",
+    "description": "",
+    "position": 10,
+    "shown": true
+  },
+  {
+    "id": "1132",
+    "name": "Lubrificanti e Additivi",
+    "description": "",
+    "position": 11,
+    "shown": true
+  },
+  {
+    "id": "1135",
+    "name": "Motore",
+    "description": "",
+    "position": 12,
+    "shown": true
+  },
+  {
+    "id": "1165",
+    "name": "Officina e prodotti chimici",
+    "description": "",
+    "position": 13,
+    "shown": true
+  },
+  {
+    "id": "1170",
+    "name": "Prodotti generici",
+    "description": "",
+    "position": 14,
+    "shown": false
+  },
+  {
+    "id": "1179",
+    "name": "Ricambi Monopattino",
+    "description": "",
+    "position": 15,
+    "shown": false
+  },
+  {
+    "id": "1195",
+    "name": "Scarico",
+    "description": "",
+    "position": 16,
+    "shown": true
+  },
+  {
+    "id": "1200",
+    "name": "Sospensioni",
+    "description": "",
+    "position": 17,
+    "shown": true
+  },
+  {
+    "id": "1213",
+    "name": "Telaio",
+    "description": "",
+    "position": 18,
+    "shown": true
+  },
+  {
+    "id": "1254",
+    "name": "Tenuta",
+    "description": "",
+    "position": 19,
+    "shown": true
+  },
+  {
+    "id": "1258",
+    "name": "Trasmissione",
+    "description": "",
+    "position": 20,
+    "shown": true
+  }
+]

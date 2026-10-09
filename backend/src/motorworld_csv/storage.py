@@ -157,3 +157,12 @@ class Repository:
         with self.connection() as db:
             jobs=[Job.model_validate_json(r['payload']) for r in db.execute('SELECT payload FROM jobs ORDER BY rowid')]
         return [j for j in jobs if states is None or j.state in states]
+
+    def save_category_rule(self,rule):
+        from .categories.matching import normalize_key
+        key='\0'.join([rule.supplier_id,normalize_key(rule.family),rule.context,rule.destination])
+        self.put_record('category_rule',key,rule.model_dump(mode='json'))
+
+    def list_category_rules(self,supplier_id: str):
+        from .categories.models import CategoryRule
+        return [CategoryRule.model_validate(r) for r in self.list_records('category_rule') if r['supplier_id']==supplier_id]
