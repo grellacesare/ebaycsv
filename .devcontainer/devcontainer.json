@@ -2,7 +2,8 @@
   "name": "Motor World CSV Studio",
   "build": { "dockerfile": "Dockerfile" },
   "features": {
-    "ghcr.io/devcontainers/features/node:1": { "version": "24" }
+    "ghcr.io/devcontainers/features/node:1": { "version": "24" },
+    "ghcr.io/devcontainers/features/sshd:1": { "version": "latest" }
   },
   "remoteUser": "vscode",
   "postCreateCommand": "bash .devcontainer/install.sh",
