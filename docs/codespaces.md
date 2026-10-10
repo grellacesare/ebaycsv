@@ -54,6 +54,23 @@ ripristino se hai dati già presenti da mantenere.
 
 ## Diagnosi dell'avvio
 
+Se compare `node: command not found` oppure la pagina restituisce HTTP 502,
+apri il terminale del Codespace nella cartella `/workspaces/ebaycsv` e aggiorna
+gli script senza cancellare i dati:
+
+```bash
+git pull --ff-only
+bash .devcontainer/install.sh && bash .devcontainer/start.sh
+```
+
+L'installazione riutilizza Node 24 già presente, anche nei percorsi NVM della
+feature. Se manca, scarica Node 24.21.0 dal sito ufficiale e verifica SHA-256
+prima di estrarlo in `var/tools`. Se manca uv, lo installa in un ambiente
+Python isolato nella stessa cartella. Non servono comandi amministratore.
+I file originali e l'archivio in `var/archive` restano conservati.
+
+Per ripetere soltanto installazione e avvio:
+
 ```bash
 bash .devcontainer/install.sh
 bash .devcontainer/start.sh
