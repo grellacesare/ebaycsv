@@ -1,0 +1,16 @@
+[
+  {
+    "name": "brick/math",
+    "version": "0.12.3",
+    "url": "https://codeload.github.com/brick/math/tar.gz/refs/tags/0.12.3",
+    "sha256": "47fddfb946bd2cb8ef8467ba9b8f130c9f948623becffe27a1457583aa503bb3",
+    "license": "MIT"
+  },
+  {
+    "name": "symfony/normalizer",
+    "version": "v1.33.0",
+    "url": "https://codeload.github.com/symfony/polyfill-intl-normalizer/tar.gz/refs/tags/v1.33.0",
+    "sha256": "6dfe8d7ab013e466ac87f0d9839cfdea37218f072bdab228ce19bbec999c8e95",
+    "license": "MIT"
+  }
+]

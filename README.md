@@ -4,6 +4,14 @@ App personale in italiano per trasformare CSV di fornitori diversi in **nuove in
 
 Importazione con anteprima e profili salvati, collegamento di anagrafica/prezzi/pesi tramite codice, editor delle compatibilità, template del builder Motor World, prezzi e margine verificati, controllo degli errori ed esportazione parziale. Ogni campo personalizzabile ha un aiuto «?» utilizzabile con mouse, tastiera o tocco.
 
+## Installazione su motorworld.it tramite FTP
+
+La [guida FTP](docs/ftp-hosting.md) spiega come installare la versione PHP
+con accesso riservato su `https://motorworld.it/csvstudio/`. Il pacchetto pronto
+si trova nelle [release](https://github.com/grellacesare/ebaycsv/releases).
+Sul hosting servono PHP 8.1+, PDO SQLite/JSON, mbstring/iconv e una cartella
+dati privata scrivibile; non servono Python, Node o Codespaces.
+
 [![Apri con GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/grellacesare/ebaycsv)
 
 Per usarla dal browser con accesso GitHub riservato, la [guida Codespaces](docs/codespaces.md)
@@ -60,6 +68,18 @@ Il repertorio iniziale contiene 714 ID eBay estratti dal builder e 21 categorie 
 [Guida caricamento eBay / PrestaShop](docs/import-platforms.md).
 
 ## Verifiche
+
+La distribuzione PHP viene verificata nel runtime Apache/PHP 8.3, anche
+senza Intl e ZipArchive. Per ricreare il pacchetto e provarlo via HTTPS:
+
+```bash
+python scripts/package_php_hosting.py
+python hosting/php/tests/http_test.py --browser
+```
+
+Il secondo comando usa Docker e Chromium locali, installa lo ZIP in un
+archivio temporaneo privato e controlla accesso, CSV ed interfaccia. Il
+certificato locale di prova non modifica la verifica HTTPS del sito reale.
 
 ```bash
 cd backend
